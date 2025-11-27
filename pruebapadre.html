@@ -1,0 +1,163 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    .contenedor-cb-interno {
+        padding: 1.5rem;
+        position: relative;
+    }
+
+    .contenedor-cb-interno h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        color: #007078;
+        text-transform: uppercase;
+    }
+
+    .contenedor-cb-interno .precio-servicio {
+        font-size: 1.3rem;
+        color: #007078;
+        margin: 0.5rem 0rem;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .contenedor-cb-interno p {
+        margin: 1rem 0rem;
+        color: #767575;
+    }
+
+    .contenedor-cb-interno .btn-agendar {
+        width: 25%;
+        margin-top: 2rem;
+    }
+
+
+    /* Button used to open the contact form - fixed at the bottom of the page */
+    .open-button {
+        cursor: pointer;
+        border: none;
+    }
+
+    .content-btn-schedule a {
+        color: #000;
+        text-align: center;
+        border: 2px solid #007078;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 10px;
+        transition: all 0.5s;
+        display: block;
+        font-weight: 500;
+    }
+
+    .content-btn-schedule a:hover {
+        color: #fff;
+        background-color: #007078;
+    }
+
+    .addi-overlay {
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        width: 20% !important;
+        height: auto;
+        z-index: 100;
+        border-radius: 4px;
+    }
+
+
+    /*Mobile*/
+
+    @media (max-width:768px) {
+        .contenedor-cb-interno {
+            padding: 0.8rem;
+        }
+
+        .contenedor-cb-interno .btn-agendar {
+            width: 50%;
+            margin: 2rem auto;
+        }
+
+        .contenedor-cb-interno h1 {
+            padding-top: 1.3rem;
+        }
+
+        .addi-overlay {
+            width: 20% !important;
+
+        }
+    }
+
+    @media (max-width:480px) {
+        .addi-overlay {
+            width: 30% !important;
+        }
+    }
+</style>
+
+<!-- solo para booster -->
+<style>   
+    .contenedor-cb-interno {
+        position: relative;
+    }
+
+    .addi-overlay {
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        width: 20% !important;
+        height: auto;
+        z-index: 100;
+        border-radius: 4px;
+    }
+
+
+    /*Mobile*/
+
+    @media (max-width:768px) {
+
+        .contenedor-cb-interno h1 {
+            padding-top: 1.3rem;
+        }
+
+        .addi-overlay {
+            width: 20% !important;
+
+        }
+    }
+
+    @media (max-width:480px) {
+        .addi-overlay {
+            width: 30% !important;
+        }
+    }
+</style>
+
+<div class="contenedor-cb-interno">
+    <h1>Limpieza de espalda premium</h1>
+    <div class="precio-servicio"><s>$270.000</s> $162.000</div>
+    <!-- <div class="precio-servicio">$270.000</div>  -->
+    <p class="descripcion-servicio">
+        Es un protocolo diseñado para purificar, renovar y equilibrar la piel de la espalda, eliminar impurezas, células
+        muertas, comedones y puntos negros a través de un proceso cuidadosamente estructurado. Ideal para mantener la
+        piel limpia, suave y libre de imperfecciones, especialmente en una zona que suele ser difícil de tratar por
+        cuenta propia.
+    </p>
+    <p>Duración: 1:30 min</p>
+    <div class="btn-agendar">
+        <button class="open-button" onclick="openForm()">
+            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
+                alt="" />
+        </button>
+    </div>
+
+    <img class="addi-overlay"
+        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+        alt="Addi promo" />
+</div>
+
+
+<style>
+
+</style>

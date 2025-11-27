@@ -1,0 +1,86 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    .contenedor-cb-interno {
+        padding: 1.5rem;
+    }
+
+    .contenedor-cb-interno h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        color: #007078;
+        text-transform: uppercase;
+    }
+
+    .contenedor-cb-interno .precio-servicio {
+        font-size: 1.3rem;
+        color: #007078;
+        margin: 0.5rem 0rem;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .contenedor-cb-interno p {
+        margin: 1rem 0rem;
+        color: #767575;
+    }
+
+    .contenedor-cb-interno .btn-agendar {
+        width: 25%;
+        margin-top: 2rem;
+    }
+
+
+    /* Button used to open the contact form - fixed at the bottom of the page */
+    .open-button {
+        cursor: pointer;
+        border: none;
+    }
+
+    .content-btn-schedule a {
+        color: #000;
+        text-align: center;
+        border: 2px solid #007078;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 10px;
+        transition: all 0.5s;
+        display: block;
+        font-weight: 500;
+    }
+
+    .content-btn-schedule a:hover {
+        color: #fff;
+        background-color: #007078;
+    }
+
+
+    /*Mobile*/
+
+    @media (max-width:768px) {
+        .contenedor-cb-interno {
+            padding: 0.8rem;
+        }
+
+        .contenedor-cb-interno .btn-agendar {
+            width: 50%;
+            margin: 2rem auto;
+        }
+
+        .contenedor-cb-interno h1 {
+            margin-top: 0rem;
+        }
+
+    }
+</style>
+
+<script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+</script>

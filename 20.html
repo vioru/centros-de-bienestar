@@ -1,0 +1,217 @@
+<style>
+.contenedor-servicios-flex {
+    display: flex; 
+    gap: 15px;       
+    flex-wrap: wrap; 
+}
+
+
+.tarjeta-servicio {
+    flex: 0 0 calc(25% - 11.25px);     
+    text-align: center; 
+    transition: all 0.5s;
+    border-radius: 0.8rem;
+}
+
+
+.tarjeta-servicio:hover {
+   transform: translateY(-0.7em);
+    box-shadow: 3px 4px 18px -3px rgba(0,112,120,0.44);
+}
+
+.contenedor-servicios .contenedor-servicios-flex .tarjeta-servicio p {
+    text-align: center;
+    font-family: 'Baloo 2', sans-serif;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+    color: #727273;
+}
+
+@media (max-width: 768px) { 
+    .contenedor-servicios-flex {
+        /* Para mobile, se mantiene 'display: flex' y 'flex-wrap: wrap' */
+    }
+
+    .tarjeta-servicio {
+        flex: 0 0 100%; 
+        margin-bottom: 0; 
+        border: 1px solid #e8d1c8;
+    }
+
+   
+}
+</style>
+
+<div class="contenedor-servicios">
+  
+  <div class="flex contenedor-servicios-flex">
+      <div class="tarjeta-servicio">
+          <a href="/centros-bienestar/limpieza-facial-premium">
+              <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/8fd42b3d-e507-4c3d-9b23-4b5b210d8893___937cecbbb6b314bf1467b3375f055fa6.webp" alt="Limepieza facial premium"/>
+              <!-- <h3>Limpieza facial premium - 30% off</h3> -->
+              <h3>Limpieza facial premium - 20% off</h3>
+              <!-- <h3>Limpieza facial premium</h3> -->
+              <!-- <h3>Limpieza facial premium - 40% off</h3> -->
+              <p>Una experiencia maravillosa de limpieza facial, remoción de comedones, células muertas y puntos negros. ¡Luce una piel radiante y sana!</p>
+              <div class="contenedor-precio">
+                  <div class="flex">
+                      <div class="w-50">
+                          <!-- <div class="precio-servicio"><s>$200.000</s>  $140.000</div> -->
+                          <div class="precio-servicio"><s>$200.000</s>  $160.000</div>
+                          <!-- <div class="precio-servicio">$200.000</div> -->
+                          <!-- <div class="precio-servicio"><s>$200.000</s>  $120.000</div> -->
+                           </div>
+                      <div class="w-50">
+                          <a class="btn-mas" href="/centros-bienestar/limpieza-facial-premium">
+                              <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/ade46136-2435-4f5b-bdb9-1edf80ada07a___c6ab23e549e185cb832ddbd21461fd63.webp" alt="">
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </a>
+      </div>
+      <div class="tarjeta-servicio">
+          <a href="/centros-bienestar/booster-hidratacion-intensiva">
+              <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/63c9cb44-3a8f-4622-ac43-e897dbf03bf1___dfa3bb63a8c1973b5f36bdf2442980df.webp" alt="Booster de hidratación intensiva"/>
+              <!-- <h3>Booster de hidratación intensiva - 30% off</h3> -->
+              <h3>Booster de hidratación intensiva - 20% off</h3>
+              <!-- <h3>Booster de hidratación intensiva</h3> -->
+              <!-- <h3>Booster de hidratación intensiva - 40% off</h3> -->
+              <p>¡El ácido hialurónico será el protagonista de este ritual! Actúa como una cascada de hidratación que brinda vitalidad, suavidad y mejora la textura de tu piel. </p>
+              <div class="contenedor-precio">
+                  <div class="flex">
+                      <div class="w-50">
+                           <!-- <div class="precio-servicio"><s>$200.000</s>  $140.000</div> -->
+                           <div class="precio-servicio"><s>$200.000</s>  $160.000</div>
+                           <!-- <div class="precio-servicio">$200.000</div> -->
+                           <!-- <div class="precio-servicio"><s>$200.000</s>  $120.000</div> -->
+                          </div>
+                      <div class="w-50">
+                          <a class="btn-mas" href="/centros-bienestar/booster-hidratacion-intensiva">
+                              <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/ade46136-2435-4f5b-bdb9-1edf80ada07a___c6ab23e549e185cb832ddbd21461fd63.webp" alt="">
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </a>
+      </div>
+      <div class="tarjeta-servicio">
+          <a href="/centros-bienestar/ritual-luminosidad">
+              <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/26a8bbfb-674a-4835-a447-55508c164c12___f9deaf987fd912a602b691a4b5ea9d1d.webp" alt="Ritual de luminosidad"/>
+              <!-- <h3>Ritual de luminosidad - 30% off</h3> -->
+              <h3>Ritual de luminosidad - 20% off</h3>
+              <!-- <h3>Ritual de luminosidad</h3> -->
+              <!-- <h3>Ritual de luminosidad - 40% off</h3> -->
+              <p>Este ritual te ayudará a lucir una piel más joven y radiante brindándote ese brillo natural que tú rostro necesita. ¡Una piel perfectamente iluminada!</p>
+              <div class="contenedor-precio">
+                  <div class="flex">
+                      <div class="w-50">
+                           <!-- <div class="precio-servicio"><s>$200.000</s>  $140.000</div> -->
+                           <div class="precio-servicio"><s>$200.000</s>  $160.000</div>
+                           <!-- <div class="precio-servicio">$200.000</div> -->
+                           <!-- <div class="precio-servicio"><s>$200.000</s>  $120.000</div> -->
+                          </div>
+                      <div class="w-50">
+                          <a class="btn-mas" href="/centros-bienestar/ritual-luminosidad">
+                              <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/ade46136-2435-4f5b-bdb9-1edf80ada07a___c6ab23e549e185cb832ddbd21461fd63.webp" alt="">
+                          </a>
+                      </div>
+                  </div> 
+              </div>
+
+          </a>
+      </div>
+      <div class="tarjeta-servicio">
+          <a href="/centros-bienestar/ritual-multivitaminico">
+              <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/3b6fe3a5-1e8c-4aba-8c73-14ed52a7019c___6deab0a82654e15623a3bc2c126bf254.webp" alt="Ritual Multivitaminico"/>
+              <!-- <h3>Ritual multivitamínico - 30% off</h3> -->
+              <h3>Ritual multivitamínico - 20% off</h3>
+              <!-- <h3>Ritual multivitamínico</h3> -->
+              <!-- <h3>Ritual multivitamínico - 40% off</h3> -->
+              <p>Vive esta experiencia rejuvenecedora que estimula la producción de colágeno, elastina y te ayudará a lucir una piel más firme e hidratada por más tiempo.</p>
+              <div class="contenedor-precio">
+                  <div class="flex">
+                      <div class="w-50">
+                          <!-- <div class="precio-servicio"><s>$200.000</s>  $140.000</div> -->
+                          <div class="precio-servicio"><s>$200.000</s>  $160.000</div>
+                          <!-- <div class="precio-servicio">$200.000</div> -->
+                          <!-- <div class="precio-servicio"><s>$200.000</s>  $120.000</div> -->
+                          </div>
+                      <div class="w-50">
+                          <a class="btn-mas" href="/centros-bienestar/ritual-multivitaminico">
+                              <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/ade46136-2435-4f5b-bdb9-1edf80ada07a___c6ab23e549e185cb832ddbd21461fd63.webp" alt="">
+                          </a>
+                      </div>
+                  </div> 
+              </div>
+          </a>
+      </div> 
+  </div> 
+</div>
+
+<div class="contenedor-servicios">
+
+  <div class="flex">
+      <div class="w-33">
+          <a href="/centros-bienestar/limpieza-espalda-premium">
+              <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/245d2d53-6dc9-4bd8-b1d3-289102416eef___acef2f388ff43d11e00fc54085f987e6.webp" alt="Limpieza de espalda premium"/>
+              <!-- <h3>Limpieza de espalda premium - 30% off</h3> -->
+              <h3>Limpieza de espalda premium - 20% off</h3>
+              <!-- <h3>Limpieza de espalda premium</h3> -->
+              <!-- <h3>Limpieza de espalda premium - 40% off</h3> -->
+              <p>Esta limpieza es perfecta para eliminar impurezas, células muertas e imperfecciones que obstruyen los poros, previniendo futuras apariciones y mejorando la apariencia de la piel.</p>
+          </a>
+          <div class="contenedor-precio">
+              <div class="flex">
+                  <div class="w-50">
+                      <!-- <div class="precio-servicio"><s>$270.000</s>  $189.000</div> -->
+                      <div class="precio-servicio"><s>$270.000</s>  $216.000</div>
+                      <!-- <div class="precio-servicio">$270.000</div> -->
+                      <!-- <div class="precio-servicio"><s>$270.000</s>  $162.000</div> -->
+                  </div>
+                  <div class="w-50">
+                      <a class="btn-mas" href="/centros-bienestar/limpieza-espalda-premium">
+                          <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/ade46136-2435-4f5b-bdb9-1edf80ada07a___c6ab23e549e185cb832ddbd21461fd63.webp" alt="">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="w-33">
+          <a href="/centros-bienestar/masaje-antiestres">
+              <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/159c7043-44af-4c41-9bec-d746fee3d3f8___9302f0de03da09c42c1337422431aa4d.webp" alt="Masajes antiestrés "/>
+              <!-- <h3>Masaje antiestrés - 30% off</h3> -->
+              <h3>Masaje antiestrés - 20% off</h3>
+              <!-- <h3>Masaje antiestrés</h3> -->
+              <!-- <h3>Masaje antiestrés - 40% off</h3> -->
+              <p>Increíble experiencia de relajación que te permite desconectar tu mente y relajar tu cuerpo, mientras tu piel recibe una dósis extra de hidratación.</p>
+              <div class="contenedor-precio">
+                  <div class="flex">
+                      <div class="w-50">
+                          <!-- <div class="precio-servicio"><s>$250.000</s>  $175.000</div> -->
+                          <div class="precio-servicio"><s>$250.000</s>  $200.000</div>
+                          <!-- <div class="precio-servicio">$250.000</div> -->
+                          <!-- <div class="precio-servicio"><s>$250.000</s>  $150.000</div> -->
+                      </div>
+                      <div class="w-50">
+                          <a class="btn-mas" href="/centros-bienestar/masaje-antiestres">
+                              <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/ade46136-2435-4f5b-bdb9-1edf80ada07a___c6ab23e549e185cb832ddbd21461fd63.webp" alt="">
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </a>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="contenedor-servicios">
+  <div class="banner-responsive">
+        <picture>
+            <source media="(max-width: 769px)" srcset="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/5308a6af-f70b-4671-8138-fcaf964d4419___6660f254d0958b15faa2aa33d1ad161b.png">
+            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/5308a6af-f70b-4671-8138-fcaf964d4419___6660f254d0958b15faa2aa33d1ad161b.png" alt="Banner procedimientos corporales">
+        </picture>
+    </div>
+</div>
