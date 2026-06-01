@@ -215,3 +215,373 @@
         </picture>
     </div>
 </div>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+
+    .btn-mas {
+        background-color: #2DCCD3;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        padding: 5px 20px;
+        font-size: 20px;
+        font-family: 'Baloo 2', sans-serif;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        max-width: 135px;
+        box-sizing: border-box;
+    }
+
+    .btn-mas:hover {
+        background-color: #26B5BC;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(45, 204, 211, 0.3);
+    }
+
+    .w-50.btn {
+        display: flex;
+        justify-content: end;
+    }
+
+    .contenedor-servicios h2 {
+        font-family: 'Baloo 2', sans-serif;
+        text-align: center;
+        font-weight: 600;
+        margin: 1rem;
+        color: #007078;
+        font-size: 2.1rem;
+        /*text-transform: uppercase;*/
+    }
+
+
+    .contenedor-servicios h3 {
+        font-family: 'Baloo 2', sans-serif;
+        text-align: center;
+        font-weight: 600;
+        color: #007078;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1rem 0.8rem 0.5rem;
+    }
+
+
+    .contenedor-servicios .w-40 {
+        margin: 1rem 0.8rem;
+        transition: all 0.5s;
+        border-radius: 0.8rem;
+    }
+
+    .contenedor-servicios .w-40:hover {
+        transform: translateY(-0.7em);
+        box-shadow: 3px 4px 18px -3px rgba(0, 112, 120, 0.44);
+    }
+
+    .contenedor-servicios .w-40 p {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+        color: #727273;
+    }
+
+
+
+    .contenedor-servicios .w-33 {
+        margin: 1rem 0.8rem;
+        transition: all 0.5s;
+        border-radius: 0.8rem;
+    }
+
+    .contenedor-servicios .w-33:hover {
+        transform: translateY(-0.7em);
+        box-shadow: 3px 4px 18px -3px rgba(0, 112, 120, 0.44);
+    }
+
+    .contenedor-servicios .w-33 p {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+        color: #727273;
+    }
+
+    .contenedor-tiendas .w-33 {
+
+        box-shadow: 0 3px 6px rgba(165, 115, 86, .24);
+        border: 1px solid #eddcd0;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+    }
+
+    .contenedor-tiendas .w-33 p {
+        text-align: left;
+        padding: 0.3rem 0rem;
+        font-size: 0.9rem;
+        color: #727273;
+    }
+
+    .contenedor-tiendas .w-33 img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .contenedor-precio {
+        position: relative;
+        padding: 1rem 2rem;
+    }
+
+    .contenedor-precio .precio-servicio {
+        font-size: 1.2rem;
+        color: #007078;
+        margin: 0.5rem 0rem;
+        font-weight: bold;
+        font-family: 'Baloo 2', sans-serif;
+        text-align: left;
+    }
+
+    .contenedor-precio .btn-mas {
+        position: absolute;
+        width: 38%;
+        right: 0.8rem;
+    }
+
+
+    .contenedor-tiendas h3 {
+        font-size: 1.1rem;
+        color: #007078;
+        font-family: 'Baloo 2', sans-serif;
+        font-weight: 600 !important;
+        text-align: left;
+        padding: 0rem;
+    }
+
+    .info-tiendas {
+        padding: 0.7rem;
+    }
+
+    .info-tiendas p {
+        color: #727273;
+        font-size: 0.85rem;
+        padding: 0.2rem 0rem;
+    }
+
+    .contenedor-tiendas .w-40 {
+
+        box-shadow: 0 3px 6px rgba(165, 115, 86, .24);
+        border: 1px solid #eddcd0;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+    }
+
+    .contenedor-tiendas .w-40 p {
+        text-align: left;
+        padding: 0.3rem 0rem;
+        font-size: 0.9rem;
+        color: #727273;
+    }
+
+    .contenedor-tiendas .w-40 img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .contenedor-tiendas .btn-agendate img {
+        width: 40%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .contenedor-tiendas .btn-agendate {
+        margin: 0.5rem 0rem;
+    }
+
+    .banner-responsive {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .banner-responsive img {
+        width: 100%;
+        display: block;
+        border-radius: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .casmara {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+
+
+    .contenedor-servicios .flex:not(.casmara) {
+        display: flex;
+        justify-content: flex-start;
+
+    }
+
+    .contenedor-servicios-flex {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+
+    .tarjeta-servicio {
+        flex: 0 0 calc(25% - 11.25px);
+        text-align: center;
+        transition: all 0.5s;
+        border-radius: 0.8rem;
+    }
+
+
+    .tarjeta-servicio:hover {
+        transform: translateY(-0.7em);
+        box-shadow: 3px 4px 18px -3px rgba(0, 112, 120, 0.44);
+    }
+
+    .procedimiento-img {
+        width: 100%;
+        border-radius: 0.6rem;
+    }
+
+    .contenedor-servicios-flex .procedimiento-img  {
+        height: 215px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .w-33 .procedimiento-img   {
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .contenedor-servicios .contenedor-servicios-flex .tarjeta-servicio p {
+        text-align: center;
+        font-family: 'Baloo 2', sans-serif;
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+        color: #727273;
+    }
+
+    /* Addi overlay styles */
+    .image-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .addi-overlay {
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        width: 35% !important;
+        height: auto;
+        z-index: 10;
+        border-radius: 4px;
+        display: none;
+    }
+
+    .newTag-overlay {
+        position: absolute;
+        bottom: 10px;
+        left: 5px;
+        z-index: 10;
+        background-color: #007078;
+        color: white !important;
+        border-radius: 8px;
+        padding: 2px 15px !important;
+        text-align: center;
+        width: 100%;
+        max-width: 110px;
+        box-sizing: border-box;
+        margin: 0;
+        font-size: 1rem !important;
+
+    }
+
+
+    @media screen and (min-width: 768px) {
+        .addi-overlay {
+            width: 80px;
+        }
+    }
+
+    @media (max-width:768px) {
+
+        .casmara {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 0;
+        }
+
+        .contenedor-servicios-flex .procedimiento-img   {
+            height: 280px;
+            object-fit: fill;
+        }
+
+
+        .contenedor-servicios h1,
+        .contenedor-servicios h2 {
+            font-size: 1.1rem !important;
+            margin: 1rem
+        }
+
+        .contenedor-servicios h3 {
+            font-size: 1.05rem;
+            padding: 1.2rem;
+        }
+
+        .contenedor-tiendas h3 {
+            font-size: 1.05rem;
+            padding: 0.5rem 0rem;
+        }
+
+        .contenedor-servicios .flex {
+            flex-wrap: wrap;
+        }
+
+        .contenedor-servicios .flex .w-40 {
+            width: 95%;
+            border: 1px solid #e8d1c8;
+        }
+
+        .contenedor-servicios .flex {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contenedor-servicios .flex .w-33 {
+            width: 95%;
+            border: 1px solid #e8d1c8;
+        }
+
+        .tarjeta-servicio {
+            flex: 0 0 100%;
+            margin-bottom: 0;
+            border: 1px solid #e8d1c8;
+        }
+
+
+    }
+</style>
+
+<div class="contenedor-servicios">
+    <div class="banner-responsive">
+        <picture>
+            <source media="(max-width: 769px)"
+                srcset="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/d2c8c5cc-ce61-49f4-92f0-226d8d4974ce___b5af66d3fc04f25fb1afa483dcee8036.jpg">
+            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/c7d4c235-1391-43f2-9d1d-73eaab71ef50___5e4086a0a9c1c96a672cd6a3c68e247e.jpg"
+                alt="Banner procedimientos corporales">
+        </picture>
+    </div>
+</div>

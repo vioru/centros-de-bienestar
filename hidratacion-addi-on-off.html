@@ -335,83 +335,41 @@
             margin-top: 1.2rem;
         }
     }
-
-    /* Slider personalizado */
-    .medipiel-slider-container {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-        max-height: 420px;
-    }
-
-    .medipiel-slider {
-        display: flex;
-        transition: transform 0.8s ease-in-out;
-        width: 100%;
-    }
-
-    .slide-item {
-        width: 100%;
-        flex-shrink: 0;
-        display: none; 
-    }
-
-    
-    .slide-item:first-child {
-        display: block;
-    }
-
-    
-    .medipiel-slider.initialized .slide-item {
-        display: block;
-    }
-
-    .slide-content {
-        width: 100%;
-        height: 100%;
-    }
-
-    .slide-image {
-        width: 100%;
-        max-height: 420px;
-        object-fit: cover;
-        display: block;
-    }
-
-    .slider-nav {
+</style>
+<style>
+    .addi-overlay {
+        display: none !important;
         position: absolute;
-        top: 50% !important;
-        transform: translateY(-50%);
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding: 0 10px;
-        pointer-events: none;
+        top: 20px;
+        right: 5px;
+        width: 20% !important;
+        height: auto;
+        z-index: 100;
+        border-radius: 4px;
     }
 
-    .slider-prev,
-    .slider-next {
-        background: white;
-        border: none;
-        cursor: pointer;
-        padding: 8px;
-        border-radius: 50%;
-        pointer-events: auto;
-        z-index: 2;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+
+    /*Mobile*/
+
+    @media (max-width:768px) {
+
+
+        .addi-overlay {
+            top: 0px;
+            right: -4px;
+            width: 20% !important;
+
+        }
     }
 
-    .slider-prev svg,
-    .slider-next svg {
-        color: #007078;
-        width: 20px;
-        height: 20px;
+    @media (max-width:480px) {
+        .addi-overlay {
+            width: 30% !important;
+        }
     }
 </style>
 
 <!-- slider -->
-
-<!-- w-40 content-brand -->
 <div class="medipiel-slider-container">
     <div class="medipiel-slider" id="medipielSlider">
 
@@ -473,12 +431,51 @@
 <!-- Slick Carousel JS CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
+<!-- text content service -->
+<!-- 
+w-60 content-brand -->
 
-<!-- w-60 content-brand  -->
+<style>
+    .contenedor-cb-interno {
+        position: relative;
+    }
 
-<!-- full -->
+    .addi-overlay {
+        display: none !important;
+        position: absolute;
+        top: 20px;
+        right: 5px;
+        width: 20% !important;
+        height: auto;
+        z-index: 100;
+        border-radius: 4px;
+    }
 
 
+    /*Mobile*/
+
+    @media (max-width:768px) {
+
+        .contenedor-cb-interno h1 {
+            padding-top: 1.3rem;
+        }
+
+        .addi-overlay {
+            top: 0px;
+            right: -4px;
+            width: 20% !important;
+
+        }
+    }
+
+    @media (max-width:480px) {
+        .addi-overlay {
+            width: 30% !important;
+        }
+    }
+</style>
+
+<!-- Precio full -->
 <div class="contenedor-cb-interno ">
     <h1>Booster de hidratación intensiva</h1>
     <div class="precio-servicio">$200.000</div>
@@ -496,13 +493,15 @@
                 alt="" />
         </button>
     </div>
+    <img class="addi-overlay"
+        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+        alt="Addi promo" />
 </div>
 
-<!-- 20% -->
-
+<!-- 50% descuento -->
 <div class="contenedor-cb-interno ">
     <h1>Booster de hidratación intensiva</h1>
-    <div class="precio-servicio"><s>$200.000</s> $160.000</div>
+    <div class="precio-servicio"><s>$200.000</s> $100.000</div>
     <p class="descripcion-servicio"> Es una experiencia delicada pero profundamente efectiva que actúa como una
         cascada de hidratación profunda, diseñada para revitalizar la piel, gracias a la acción de su mascarilla
         intensiva, la sinergia entre productos de alta eficacia y tecnología especializada, este tratamiento
@@ -517,52 +516,12 @@
                 alt="" />
         </button>
     </div>
+    <img class="addi-overlay"
+        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+        alt="Addi promo" />
 </div>
 
-<!-- 30% -->
-
-<div class="contenedor-cb-interno ">
-    <h1>Booster de hidratación intensiva</h1>
-    <div class="precio-servicio"><s>$200.000</s> $140.000</div>
-    <p class="descripcion-servicio"> Es una experiencia delicada pero profundamente efectiva que actúa como una
-        cascada de hidratación profunda, diseñada para revitalizar la piel, gracias a la acción de su mascarilla
-        intensiva, la sinergia entre productos de alta eficacia y tecnología especializada, este tratamiento
-        potencia la hidratación, aportando una sensación inmediata de frescura, suavidad y confort. <br><br> Se
-        encuentra formulado con brotes de pétalos y capullos de rosas orgánicas y extractos esenciales de la rosa
-        centifolia, ricos en vitaminas B, C, D y ácidos grasos Omega 3 y 6, que ofrece un poderoso efecto
-        antioxidante. </p>
-    <p>Duración: 60 min</p>
-    <div class="btn-agendar">
-        <button class="open-button" onclick="openForm()">
-            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
-                alt="" />
-        </button>
-    </div>
-</div>
-
-<!-- 25% -->
-
-<div class="contenedor-cb-interno ">
-    <h1>Booster de hidratación intensiva</h1>
-    <div class="precio-servicio"><s>$200.000</s> $150.000</div>
-    <p class="descripcion-servicio"> Es una experiencia delicada pero profundamente efectiva que actúa como una
-        cascada de hidratación profunda, diseñada para revitalizar la piel, gracias a la acción de su mascarilla
-        intensiva, la sinergia entre productos de alta eficacia y tecnología especializada, este tratamiento
-        potencia la hidratación, aportando una sensación inmediata de frescura, suavidad y confort. <br><br> Se
-        encuentra formulado con brotes de pétalos y capullos de rosas orgánicas y extractos esenciales de la rosa
-        centifolia, ricos en vitaminas B, C, D y ácidos grasos Omega 3 y 6, que ofrece un poderoso efecto
-        antioxidante. </p>
-    <p>Duración: 60 min</p>
-    <div class="btn-agendar">
-        <button class="open-button" onclick="openForm()">
-            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
-                alt="" />
-        </button>
-    </div>
-</div>
-
-<!-- 40% -->
-
+<!-- 40% descuento -->
 <div class="contenedor-cb-interno ">
     <h1>Booster de hidratación intensiva</h1>
     <div class="precio-servicio"><s>$200.000</s> $120.000</div>
@@ -580,9 +539,127 @@
                 alt="" />
         </button>
     </div>
+    <img class="addi-overlay"
+        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+        alt="Addi promo" />
 </div>
 
-<!-- lo otro  -->
+<!-- 35% descuento -->
+<div class="contenedor-cb-interno ">
+    <h1>Booster de hidratación intensiva</h1>
+    <div class="precio-servicio"><s>$200.000</s> $130.000</div>
+    <p class="descripcion-servicio"> Es una experiencia delicada pero profundamente efectiva que actúa como una
+        cascada de hidratación profunda, diseñada para revitalizar la piel, gracias a la acción de su mascarilla
+        intensiva, la sinergia entre productos de alta eficacia y tecnología especializada, este tratamiento
+        potencia la hidratación, aportando una sensación inmediata de frescura, suavidad y confort. <br><br> Se
+        encuentra formulado con brotes de pétalos y capullos de rosas orgánicas y extractos esenciales de la rosa
+        centifolia, ricos en vitaminas B, C, D y ácidos grasos Omega 3 y 6, que ofrece un poderoso efecto
+        antioxidante. </p>
+    <p>Duración: 60 min</p>
+    <div class="btn-agendar">
+        <button class="open-button" onclick="openForm()">
+            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
+                alt="" />
+        </button>
+    </div>
+    <img class="addi-overlay"
+        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+        alt="Addi promo" />
+</div>
+
+<!-- 30% descuento -->
+<div class="contenedor-cb-interno ">
+    <h1>Booster de hidratación intensiva</h1>
+    <div class="precio-servicio"><s>$200.000</s> $140.000</div>
+    <p class="descripcion-servicio"> Es una experiencia delicada pero profundamente efectiva que actúa como una
+        cascada de hidratación profunda, diseñada para revitalizar la piel, gracias a la acción de su mascarilla
+        intensiva, la sinergia entre productos de alta eficacia y tecnología especializada, este tratamiento
+        potencia la hidratación, aportando una sensación inmediata de frescura, suavidad y confort. <br><br> Se
+        encuentra formulado con brotes de pétalos y capullos de rosas orgánicas y extractos esenciales de la rosa
+        centifolia, ricos en vitaminas B, C, D y ácidos grasos Omega 3 y 6, que ofrece un poderoso efecto
+        antioxidante. </p>
+    <p>Duración: 60 min</p>
+    <div class="btn-agendar">
+        <button class="open-button" onclick="openForm()">
+            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
+                alt="" />
+        </button>
+    </div>
+    <img class="addi-overlay"
+        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+        alt="Addi promo" />
+</div>
+
+<!-- 25% descuento -->
+<div class="contenedor-cb-interno ">
+    <h1>Booster de hidratación intensiva</h1>
+    <div class="precio-servicio"><s>$200.000</s> $150.000</div>
+    <p class="descripcion-servicio"> Es una experiencia delicada pero profundamente efectiva que actúa como una
+        cascada de hidratación profunda, diseñada para revitalizar la piel, gracias a la acción de su mascarilla
+        intensiva, la sinergia entre productos de alta eficacia y tecnología especializada, este tratamiento
+        potencia la hidratación, aportando una sensación inmediata de frescura, suavidad y confort. <br><br> Se
+        encuentra formulado con brotes de pétalos y capullos de rosas orgánicas y extractos esenciales de la rosa
+        centifolia, ricos en vitaminas B, C, D y ácidos grasos Omega 3 y 6, que ofrece un poderoso efecto
+        antioxidante. </p>
+    <p>Duración: 60 min</p>
+    <div class="btn-agendar">
+        <button class="open-button" onclick="openForm()">
+            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
+                alt="" />
+        </button>
+    </div>
+    <img class="addi-overlay"
+        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+        alt="Addi promo" />
+</div>
+
+<!-- 20% descuento -->
+<div class="contenedor-cb-interno ">
+    <h1>Booster de hidratación intensiva</h1>
+    <div class="precio-servicio"><s>$200.000</s> $160.000</div>
+    <p class="descripcion-servicio"> Es una experiencia delicada pero profundamente efectiva que actúa como una
+        cascada de hidratación profunda, diseñada para revitalizar la piel, gracias a la acción de su mascarilla
+        intensiva, la sinergia entre productos de alta eficacia y tecnología especializada, este tratamiento
+        potencia la hidratación, aportando una sensación inmediata de frescura, suavidad y confort. <br><br> Se
+        encuentra formulado con brotes de pétalos y capullos de rosas orgánicas y extractos esenciales de la rosa
+        centifolia, ricos en vitaminas B, C, D y ácidos grasos Omega 3 y 6, que ofrece un poderoso efecto
+        antioxidante. </p>
+    <p>Duración: 60 min</p>
+    <div class="btn-agendar">
+        <button class="open-button" onclick="openForm()">
+            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
+                alt="" />
+        </button>
+    </div>
+    <img class="addi-overlay"
+        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+        alt="Addi promo" />
+</div>
+
+<!-- 10% descuento -->
+<div class="contenedor-cb-interno ">
+    <h1>Booster de hidratación intensiva</h1>
+    <div class="precio-servicio"><s>$200.000</s> $180.000</div>
+    <p class="descripcion-servicio"> Es una experiencia delicada pero profundamente efectiva que actúa como una
+        cascada de hidratación profunda, diseñada para revitalizar la piel, gracias a la acción de su mascarilla
+        intensiva, la sinergia entre productos de alta eficacia y tecnología especializada, este tratamiento
+        potencia la hidratación, aportando una sensación inmediata de frescura, suavidad y confort. <br><br> Se
+        encuentra formulado con brotes de pétalos y capullos de rosas orgánicas y extractos esenciales de la rosa
+        centifolia, ricos en vitaminas B, C, D y ácidos grasos Omega 3 y 6, que ofrece un poderoso efecto
+        antioxidante. </p>
+    <p>Duración: 60 min</p>
+    <div class="btn-agendar">
+        <button class="open-button" onclick="openForm()">
+            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
+                alt="" />
+        </button>
+    </div>
+    <img class="addi-overlay"
+        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+        alt="Addi promo" />
+</div>
+
+<!-- acordeon y video  -->
 
 <div class="contenedor-servicios-acordeon">
     <div class="accordion">
@@ -705,7 +782,7 @@
 </div>
 
 <div class="contenedor-aparatologia w-100">
-<h2>Procedimiento</h2>
+    <h2>Procedimiento</h2>
     <iframe width="100%" height="490" src="https://www.youtube.com/embed/0iWz--ecBT8"
         title="Booster de hidratación intensiva - Centros de bienestar Medipiel" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -721,17 +798,21 @@
         </div>
         <div class="accordion-content">
             <p><strong>¿Para qué tipo de piel está recomendado?</strong> </p>
-            <p>Es apto para todo tipo de piel, incluyendo pieles sensibles, secas o deshidratadas. También es ideal como refuerzo en pieles opacas o con signos de fatiga</p>
+            <p>Es apto para todo tipo de piel, incluyendo pieles sensibles, secas o deshidratadas. También es ideal como
+                refuerzo en pieles opacas o con signos de fatiga</p>
             <br />
             <p><strong>¿Cuántas sesiones se recomiendan?</strong></p>
-            <p>Una sola sesión brinda resultados visibles, pero para mantener una piel hidratada y luminosa, se recomienda una sesión cada 2 a 4 semanas, dependiendo del estado de la piel.</p>
+            <p>Una sola sesión brinda resultados visibles, pero para mantener una piel hidratada y luminosa, se
+                recomienda una sesión cada 2 a 4 semanas, dependiendo del estado de la piel.</p>
             <br />
 
             <p><strong>¿El tratamiento tiene efectos secundarios?</strong></p>
-            <p>Es un tratamiento no invasivo y sin efectos secundarios. Puede haber un leve enrojecimiento temporal si la piel es muy sensible, pero desaparece en pocas horas.</p>
+            <p>Es un tratamiento no invasivo y sin efectos secundarios. Puede haber un leve enrojecimiento temporal si
+                la piel es muy sensible, pero desaparece en pocas horas.</p>
             <br />
             <p><strong>¿Es compatible con otros tratamientos faciales?</strong></p>
-            <p>Sí, puede combinarse con otros tratamientos como limpiezas profundas, protocolos antiedad o despigmentantes, siempre bajo la recomendación del profesional.</p>
+            <p>Sí, puede combinarse con otros tratamientos como limpiezas profundas, protocolos antiedad o
+                despigmentantes, siempre bajo la recomendación del profesional.</p>
             <br />
         </div>
     </div>

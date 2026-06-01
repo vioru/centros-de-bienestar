@@ -229,12 +229,21 @@
     }
 
     .procedimiento-img {
-        max-height: 626px;
-        min-height: 226px;
         width: 100%;
-        border-radius: 1rem;
+        border-radius: 0.6rem;
     }
 
+    .contenedor-servicios-flex .procedimiento-img  {
+        height: 215px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .w-33 .procedimiento-img   {
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+    }
     .contenedor-servicios .contenedor-servicios-flex .tarjeta-servicio p {
         text-align: center;
         font-family: 'Baloo 2', sans-serif;
@@ -260,6 +269,25 @@
         border-radius: 4px;
     }
 
+    .newTag-overlay {
+        position: absolute;
+        bottom: 10px;
+        left: 5px;
+        z-index: 10;
+        background-color: #007078;
+        color: white !important;
+        border-radius: 8px;
+        padding: 2px 15px !important;
+        text-align: center;
+        width: 100%;
+        max-width: 110px;
+        box-sizing: border-box;
+        margin: 0;
+        font-size: 1rem !important;
+
+    }
+
+
     @media screen and (min-width: 768px) {
         .addi-overlay {
             width: 80px;
@@ -273,6 +301,11 @@
             align-items: center;
             gap: 1rem;
             padding: 1rem 0;
+        }
+
+        .contenedor-servicios-flex .procedimiento-img   {
+            height: 280px;
+            object-fit: fill;
         }
 
 
@@ -426,10 +459,96 @@
 
 
 <!-- faciales  -->
-
 <div class="contenedor-servicios">
 
     <div class="flex contenedor-servicios-flex">
+        <div class="tarjeta-servicio">
+            <a href="/centros-bienestar/ritual-efecto-rejuvenecedor">
+                <div class="image-container">
+                    <img class="procedimiento-img"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/e09f63ea-1f3b-4078-b2eb-bb76fe2074ef___1e7d84fdd98ee1b86985398f785f880d.webp"
+                        alt="Ritual efecto rejuvenecedor" />
+                    <img class="addi-overlay"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+                        alt="Addi promo" />
+                    <p class="newTag-overlay"> Nuevo</p>
+                </div>
+                <h3>Ritual efecto rejuvenecedor - 40% off</h3>
+                <p>Experimenta una renovación completa de tu piel con nuestro ritual rejuvenecedor que combina técnicas
+                    avanzadas para estimular la regeneración celular y reducir los signos del envejecimiento.</p>
+                <div class="contenedor-precio">
+                    <div class="flex">
+                        <div class="w-50">
+                            <div class="precio-servicio"><s>$200.000</s> $120.000</div>
+                        </div>
+                        <div class="w-50 btn">
+                            <button class="btn-mas"
+                                onclick="window.location.href='/centros-bienestar/ritual-efecto-rejuvenecedor'">
+                                Lo quiero
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tarjeta-servicio">
+            <a href="/centros-bienestar/ritual-anti-imperfecciones">
+                <div class="image-container">
+                    <img class="procedimiento-img"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/4d26fbbc-17a5-48e1-8cf1-5879849e3b05___79f94da8fb6977b9f1df95f4f2b83bf6.webp"
+                        alt="Ritual anti-imperfecciones" />
+                    <img class="addi-overlay"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+                        alt="Addi promo" />
+                    <p class="newTag-overlay"> Nuevo</p>
+                </div>
+                <h3>Ritual anti-imperfecciones - 40% off</h3>
+                <p>Tratamiento especializado para combatir imperfecciones y mejorar la textura de tu piel, ayudando a
+                    reducir la apariencia de poros dilatados y manchas para un cutis más uniforme.</p>
+                <div class="contenedor-precio">
+                    <div class="flex">
+                        <div class="w-50">
+                            <div class="precio-servicio"><s>$200.000</s> $120.000</div>
+                        </div>
+                        <div class="w-50 btn">
+                            <button class="btn-mas"
+                                onclick="window.location.href='/centros-bienestar/ritual-anti-imperfecciones'">
+                                Lo quiero
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tarjeta-servicio">
+            <a href="/centros-bienestar/ritual-cuidado-sensible">
+                <div class="image-container">
+                    <img class="procedimiento-img"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/e17f37d8-7a36-41e0-9ae7-93ac15e73949___6af959874bb609e2754422b9c6138bb0.webp"
+                        alt="Ritual cuidado sensible" />
+                    <img class="addi-overlay"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+                        alt="Addi promo" />
+                    <p class="newTag-overlay"> Nuevo</p>
+                </div>
+                <h3>Ritual cuidado sensible - 40% off</h3>
+                <p>Diseñado especialmente para pieles sensibles y delicadas, este ritual ofrece cuidados suaves y
+                    calmantes que nutren y protegen tu piel sin causar irritación.</p>
+                <div class="contenedor-precio">
+                    <div class="flex">
+                        <div class="w-50">
+                            <div class="precio-servicio"><s>$200.000</s> $120.000</div>
+                        </div>
+                        <div class="w-50 btn">
+                            <button class="btn-mas"
+                                onclick="window.location.href='/centros-bienestar/ritual-cuidado-sensible'">
+                                Lo quiero
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
         <div class="tarjeta-servicio">
             <a href="/centros-bienestar/limpieza-facial-premium">
                 <div class="image-container">
@@ -540,87 +659,7 @@
                 </div>
             </a>
         </div>
-        <div class="tarjeta-servicio">
-            <a href="/centros-bienestar/ritual-efecto-rejuvenecedor">
-                <div class="image-container">
-                    <img class="procedimiento-img" src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/e09f63ea-1f3b-4078-b2eb-bb76fe2074ef___1e7d84fdd98ee1b86985398f785f880d.webp"
-                        alt="Ritual efecto rejuvenecedor" />
-                    <img class="addi-overlay"
-                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
-                        alt="Addi promo" />
-                </div>
-                <h3>Ritual efecto rejuvenecedor - 40% off</h3>
-                <p>Experimenta una renovación completa de tu piel con nuestro ritual rejuvenecedor que combina técnicas
-                    avanzadas para estimular la regeneración celular y reducir los signos del envejecimiento.</p>
-                <div class="contenedor-precio">
-                    <div class="flex">
-                        <div class="w-50">
-                            <div class="precio-servicio"><s>$200.000</s> $120.000</div>
-                        </div>
-                        <div class="w-50 btn">
-                            <button class="btn-mas"
-                                onclick="window.location.href='/centros-bienestar/ritual-efecto-rejuvenecedor'">
-                                Lo quiero
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="tarjeta-servicio">
-            <a href="/centros-bienestar/ritual-anti-imperfecciones">
-                <div class="image-container">
-                    <img  class="procedimiento-img" src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/4d26fbbc-17a5-48e1-8cf1-5879849e3b05___79f94da8fb6977b9f1df95f4f2b83bf6.webp"
-                        alt="Ritual anti-imperfecciones" />
-                    <img class="addi-overlay"
-                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
-                        alt="Addi promo" />
-                </div>
-                <h3>Ritual anti-imperfecciones - 40% off</h3>
-                <p>Tratamiento especializado para combatir imperfecciones y mejorar la textura de tu piel, ayudando a
-                    reducir la apariencia de poros dilatados y manchas para un cutis más uniforme.</p>
-                <div class="contenedor-precio">
-                    <div class="flex">
-                        <div class="w-50">
-                            <div class="precio-servicio"><s>$200.000</s> $120.000</div>
-                        </div>
-                        <div class="w-50 btn">
-                            <button class="btn-mas"
-                                onclick="window.location.href='/centros-bienestar/ritual-anti-imperfecciones'">
-                                Lo quiero
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="tarjeta-servicio">
-            <a href="/centros-bienestar/ritual-cuidado-sensible">
-                <div class="image-container">
-                    <img class="procedimiento-img" src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/e17f37d8-7a36-41e0-9ae7-93ac15e73949___6af959874bb609e2754422b9c6138bb0.webp"
-                        alt="Ritual cuidado sensible" />
-                    <img class="addi-overlay"
-                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
-                        alt="Addi promo" />
-                </div>
-                <h3>Ritual cuidado sensible - 40% off</h3>
-                <p>Diseñado especialmente para pieles sensibles y delicadas, este ritual ofrece cuidados suaves y
-                    calmantes que nutren y protegen tu piel sin causar irritación.</p>
-                <div class="contenedor-precio">
-                    <div class="flex">
-                        <div class="w-50">
-                            <div class="precio-servicio"><s>$200.000</s> $120.000</div>
-                        </div>
-                        <div class="w-50 btn">
-                            <button class="btn-mas"
-                                onclick="window.location.href='/centros-bienestar/ritual-cuidado-sensible'">
-                                Lo quiero
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+
     </div>
 </div>
 
@@ -634,6 +673,37 @@
 <div class="contenedor-servicios">
 
     <div class="flex">
+        <div class="w-33">
+            <a href="/centros-bienestar/masaje-de-drenaje-linfatico-corporal">
+
+                <div class="image-container">
+                    <img class="procedimiento-img"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/20779bb4-abbf-41c3-a5d8-d1d379b45643___cbca8683eefcacaebc4dd52a98159cf9.webp"
+                        alt="Masajes antiestrés " />
+                    <img class="addi-overlay"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+                        alt="Addi promo" />
+                    <p class="newTag-overlay"> Nuevo</p>
+                </div>
+                <h3>Masaje de drenaje linfático corporal- 40% off</h3>
+                <p>Es una técnica terapéutica manual que estimula el sistema linfático para favorecer la eliminación de
+                    toxinas, líquidos retenidos y residuos metabólicos del cuerpo</p>
+                <div class="contenedor-precio">
+                    <div class="flex">
+                        <div class="w-50">
+                            <div class="precio-servicio">X5 sesiones <s>$650.000</s> $390.000</div>
+                            <div class="precio-servicio">X10 sesiones <s>$1.300.000</s> $780.000</div>
+                        </div>
+                        <div class="w-50 btn">
+                            <button class="btn-mas"
+                                onclick="window.location.href='/centros-bienestar/masaje-de-drenaje-linfatico-corporal'">
+                                Lo quiero
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
         <div class="w-33">
             <a href="/centros-bienestar/limpieza-espalda-premium">
                 <div class="image-container">
@@ -691,36 +761,7 @@
                 </div>
             </a>
         </div>
-        <div class="w-33">
-            <a href="/centros-bienestar/masaje-de-drenaje-linfatico-corporal">
 
-                <div class="image-container">
-                    <img class="procedimiento-img"
-                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/20779bb4-abbf-41c3-a5d8-d1d379b45643___cbca8683eefcacaebc4dd52a98159cf9.webp"
-                        alt="Masajes antiestrés " />
-                    <img class="addi-overlay"
-                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
-                        alt="Addi promo" />
-                </div>
-                <h3>Masaje de drenaje linfático corporal- 40% off</h3>
-                <p>Es una técnica terapéutica manual que estimula el sistema linfático para favorecer la eliminación de
-                    toxinas, líquidos retenidos y residuos metabólicos del cuerpo</p>
-                <div class="contenedor-precio">
-                    <div class="flex">
-                        <div class="w-50">
-                            <div class="precio-servicio">X5 sesiones <s>$650.000</s> $390.000</div>
-                            <div class="precio-servicio">X10 sesiones <s>$1.300.000</s> $780.000</div>
-                        </div>
-                        <div class="w-50 btn">
-                            <button class="btn-mas"
-                                onclick="window.location.href='/centros-bienestar/masaje-de-drenaje-linfatico-corporal'">
-                                Lo quiero
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
     </div>
 </div>
 <!-- video burbuja -->
@@ -743,233 +784,215 @@
 
 <!-- tiendas -->
 <div class="contenedor-servicios contenedor-tiendas">
-    <h2>Visítanos en: </h2>
+        <h2>Visítanos en: </h2>
 
-    <div class="flex">
-        <div class="w-33">
-            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg" alt="Medipiel el Tesoro" />
-            <div class="info-tiendas">
-                <h3>CC EL TESORO 1 - LOCAL 1240</h3>
-                <p><strong>Ciudad:</strong> Medellín</p>
-                <p><strong>Dirección:</strong> Carrera 25A # 1A Sur-45</p>
-                <p><strong>Correo:</strong> </p>
-                <p><strong>Horarios:</strong> Lunes a viernes de 8:00 a.m - 8:00 p.m | Domingos y festivos de 11:00 a.m
-                    - 8:00 p.m</p>
-                <p class="btn-agendate"><a target="_blank"
-                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola20%Medipiel,%20deseo%20agendar%20un%20procediemiento%20en%20Tesoro1"><img
-                            class="procedimiento-img"
-                            src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
-                            alt="" /></a></p>
+        <div class="flex">
+            <div class="w-33">
+                <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg" alt="Medipiel el Tesoro"/>
+                <div class="info-tiendas">
+                    <h3>CC EL TESORO 1 - LOCAL 1240</h3>
+                    <p><strong>Ciudad:</strong> Medellín</p>
+                    <p><strong>Dirección:</strong> Carrera 25A # 1A Sur-45</p>
+                    <p><strong>Correo:</strong> </p>
+                    <p><strong>Horarios:</strong> Lunes a Sábado de 8:00 a.m - 8:00 p.m | Domingos y festivos de 11:00 a.m - 8:00 p.m</p>
+                    <p class="btn-agendate">
+                        <button class="btn-mas" onclick="window.open('https://api.whatsapp.com/send?phone=573128174011&text=Hola%20Medipiel,%20deseo%20agendar%20un%20procediemiento%20en%20Tesoro1', '_blank')">
+                            Agéndate
+                        </button>
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="w-33">
-            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg" alt="Medipiel Piazza Bella" />
-            <div class="info-tiendas">
-                <h3>PIAZZA BELLA - LOCAL 9808</h3>
-                <p><strong>Ciudad:</strong> Medellín</p>
-                <p><strong>Dirección:</strong> Carrera 29D #6A - 05 </p>
-                <p><strong>Correo:</strong> piazabella@medipiel.com.co</p>
-                <p><strong>Horarios:</strong> Lunes a viernes de 9:00 a.m - 6:00 p.m</p>
-                <p class="btn-agendate"><a target="_blank"
-                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola20%Medipiel,%20deseo%20agendar%20un%20procediemiento%20en%20Piazza%20Bella"><img
-                            class="procedimiento-img"
-                            src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
-                            alt="" /></a></p>
+            <div class="w-33">
+                <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg" alt="Medipiel Piazza Bella"/>
+                <div class="info-tiendas">
+                    <h3>PIAZZA BELLA - LOCAL 9808</h3>
+                    <p><strong>Ciudad:</strong> Medellín</p>
+                    <p><strong>Dirección:</strong> Carrera 29D #6A - 05 </p>
+                    <p><strong>Correo:</strong> piazabella@medipiel.com.co</p>
+                    <p><strong>Horarios:</strong> Lunes a Sábado de 9:00 a.m - 6:00 p.m</p>
+                    <p class="btn-agendate">
+                        <button class="btn-mas" onclick="window.open('https://api.whatsapp.com/send?phone=573128174011&text=Hola%20Medipiel,%20deseo%20agendar%20un%20procediemiento%20en%20Piazza%20Bella', '_blank')">
+                            Agéndate
+                        </button>
+                    </p>
+                </div>
             </div>
+            <div class="w-33">
+                <img src="https://medipielsa.vtexassets.com/arquivos/store-image-9.jpg" alt="Medipiel Viva Laureles"/>
+                <div class="info-tiendas">
+                    <h3>VIVA LAURELES - LOCAL 103</h3>
+                    <p><strong>Ciudad:</strong> Medellín</p>
+                    <p><strong>Dirección:</strong> Carrera 81 #37 - 100 </p>
+                    <p><strong>Correo:</strong> vivalaureles@medipiel.com.co</p>
+                    <p><strong>Horarios:</strong> Lunes a Sábado de 8:00 a.m - 8:00 p.m | Domingos y festivos de 11:00 a.m - 7:00 p.m</p>
+                    <p class="btn-agendate">
+                        <button class="btn-mas" onclick="window.open('https://api.whatsapp.com/send?phone=573128174011&text=Hola%20Medipiel,%20deseo%20agendar%20un%20procediemiento%20en%20Viva%20Laureles', '_blank')">
+                            Agéndate
+                        </button>
+                    </p>
+                </div>
+            </div>   
         </div>
-        <div class="w-33">
-            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-9.jpg" alt="Medipiel Viva Laureles" />
-            <div class="info-tiendas">
-                <h3>VIVA LAURELES - LOCAL 103</h3>
-                <p><strong>Ciudad:</strong> Medellín</p>
-                <p><strong>Dirección:</strong> Carrera 81 #37 - 100 </p>
-                <p><strong>Correo:</strong> vivalaureles@medipiel.com.co</p>
-                <p><strong>Horarios:</strong> Lunes a viernes de 8:00 a.m - 8:00 p.m | Domingos y festivos de 11:00 a.m
-                    - 7:00 p.m</p>
-                <p class="btn-agendate"><a target="_blank"
-                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola20%Medipiel,%20deseo%20agendar%20un%20procediemiento%20en%20Viva%20Laureles"><img
-                            class="procedimiento-img"
-                            src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
-                            alt="" /></a></p>
-            </div>
-        </div>
-    </div>
 
-
-    <div class="flex">
-        <div class="w-33">
-            <img src="https://medipielsa.vteximg.com.br/arquivos/store.jpg" alt="Medipiel Mall PLaza" />
-            <div class="info-tiendas">
-                <h3>CC MALL PLAZA - LOCAL 109</h3>
-                <p><strong>Ciudad:</strong> Cali</p>
-                <p><strong>Dirección:</strong> Calle 5 # 52 - 210 </p>
-                <p><strong>Correo:</strong> </p>
-                <p><strong>Horarios:</strong> Lunes a viernes de 10:00 a.m - 7:00 p.m</p>
-                <p class="btn-agendate"><a target="_blank"
-                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola20%Medipiel,%20deseo%20agendar%20un%20procediemiento%20en%20mall%20plaza%20cali"><img
-                            class="procedimiento-img"
-                            src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
-                            alt="" /></a></p>
+        <div class="flex">
+            <div class="w-33">
+                <img src="https://medipielsa.vteximg.com.br/arquivos/store.jpg" alt="Medipiel Mall PLaza"/>
+                <div class="info-tiendas">
+                    <h3>CC MALL PLAZA - LOCAL 109</h3>
+                    <p><strong>Ciudad:</strong> Cali</p>
+                    <p><strong>Dirección:</strong> Calle 5 # 52 - 210 </p>
+                    <p><strong>Correo:</strong> </p>
+                    <p><strong>Horarios:</strong> Lunes a Sábado de 10:00 a.m - 7:00 p.m</p>
+                    <p class="btn-agendate">
+                        <button class="btn-mas" onclick="window.open('https://api.whatsapp.com/send?phone=573128174011&text=Hola%20Medipiel,%20deseo%20agendar%20un%20procediemiento%20en%20mall%20plaza%20cali', '_blank')">
+                            Agéndate
+                        </button>
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="w-33">
-            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-33.jpg" alt="Medipiel parque la 93" />
-            <div class="info-tiendas">
-                <h3>PARQUE LA 93 - LOCAL 1</h3>
-                <p><strong>Ciudad:</strong> Bogotá</p>
-                <p><strong>Dirección:</strong> Calle 93A # 13-27 </p>
-                <p><strong>Correo:</strong> </p>
-                <p><strong>Horarios:</strong> Lunes a viernes de 8:00 a.m - 8:00 p.m | Domingos y festivos de 10:00 a.m
-                    - 7:00 p.m</p>
-                <p class="btn-agendate"><a target="_blank"
-                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola20%Medipiel,%20deseo%20agendar%20un%20procediemiento%20en%20parque%20la%2093"><img
-                            class="procedimiento-img"
-                            src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
-                            alt="" /></a></p>
+            <div class="w-33">
+                <img src="https://medipielsa.vtexassets.com/arquivos/store-image-33.jpg" alt="Medipiel parque la 93"/>
+                    <div class="info-tiendas">
+                        <h3>PARQUE LA 93 - LOCAL 1</h3>
+                        <p><strong>Ciudad:</strong> Bogotá</p>
+                        <p><strong>Dirección:</strong> Calle 93A # 13-27 </p>
+                        <p><strong>Correo:</strong> </p>
+                        <p><strong>Horarios:</strong> Lunes a Sábado de 8:00 a.m - 8:00 p.m | Domingos y festivos de 10:00 a.m - 7:00 p.m</p>
+                        <p class="btn-agendate">
+                            <button class="btn-mas" onclick="window.open('https://api.whatsapp.com/send?phone=573128174011&text=Hola%20Medipiel,%20deseo%20agendar%20un%20procediemiento%20en%20parque%20la%2093', '_blank')">
+                                Agéndate
+                            </button>
+                        </p>
+                    </div>
             </div>
-        </div>
-        <div class="w-33">
-            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg"
-                alt="Medipiel centro comercial Buenavista Santa Marta" />
-            <div class="info-tiendas">
-                <h3>CC BUENAVISTA</h3>
-                <p><strong>Ciudad:</strong> Santa Marta</p>
-                <p><strong>Dirección:</strong> Av. El Libertador #34-01</p>
-                <p><strong>Teléfono:</strong> 3128174011 </p>
-                <p><strong>Horarios:</strong> Lunes a sábado de 9:00 a.m - 6:00 p.m</p>
-                <p class="btn-agendate"><a target="_blank"
-                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20Buenavista"><img
-                            class="procedimiento-img"
-                            src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
-                            alt="" /></a></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="flex">
-
-        <div class="w-33">
-            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg" alt="Medipiel plaza Catalunya" />
-            <div class="info-tiendas">
-                <h3>PLAZA CATALUNYA - LOCAL 10</h3>
-                <p><strong>Ciudad:</strong> Barranquilla</p>
-                <p><strong>Dirección:</strong> Carrera 58 # 82 79</p>
-                <p><strong>Teléfono:</strong> 3128174011 </p>
-                <p><strong>Horarios:</strong> Lunes a viernes de 8:00 a.m - 8:00 p.m | Domingos y festivos de 9:00 a.m -
-                    6:00 p.m</p>
-                <p class="btn-agendate"><a target="_blank"
-                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20Catalunya"><img
-                            class="procedimiento-img"
-                            src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
-                            alt="" /></a></p>
-            </div>
-        </div>
-        <div class="w-33">
-            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg"
-                alt="Medipiel centro comercial Ecoplaza Mosquera" />
-            <div class="info-tiendas">
-                <h3>CC ECOPLAZA MOSQUERA - LOCAL 126</h3>
-                <p><strong>Ciudad:</strong> Mosquera - Cundinamarca</p>
-                <p><strong>Dirección:</strong> Carrera 3 # 15A-57</p>
-                <p><strong>Teléfono:</strong> 3128174011 </p>
-                <p><strong>Horarios:</strong> Lunes a sábado de 10:00 a.m - 7:00 p.m</p>
-                <p class="btn-agendate"><a target="_blank"
-                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20Ecoplaza"><img
-                            class="procedimiento-img"
-                            src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
-                            alt="" /></a></p>
-            </div>
-        </div>
-        <div class="w-33">
-            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg"
-                alt="Medipiel centro comercial Viva Villaviencio " />
-            <div class="info-tiendas">
-                <h3>CC VIVA VILLAVICENCIO - LOCAL 110</h3>
-                <p><strong>Ciudad:</strong> Villavicencio</p>
-                <p><strong>Dirección:</strong> Calle 7 #45-185</p>
-                <p><strong>Teléfono:</strong> 3128174011 </p>
-                <p><strong>Horarios:</strong> Lunes a sábado de 10:00 a.m - 7:00 p.m</p>
-                <p class="btn-agendate"><a target="_blank"
-                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20Villavicencio"><img
-                            class="procedimiento-img"
-                            src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
-                            alt="" /></a></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="flex">
-
-        <div class="w-33">
-            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg"
-                alt="Medipiel centro comercial San Diego " />
-            <div class="info-tiendas">
-                <h3>CC SAN DIEGO - LOCAL 1488</h3>
-                <p><strong>Ciudad:</strong> Medellín</p>
-                <p><strong>Dirección:</strong> Cl 33 #42B - 06</p>
-                <p><strong>Correo:</strong> tienda.sandiego@medipiel.co </p>
-                <p><strong>Horarios:</strong> Lunes a sábado de 10:00 a.m - 7:00 p.m</p>
-                <p class="btn-agendate"><a target="_blank"
-                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20San%20Diego"><img
-                            class="procedimiento-img"
-                            src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
-                            alt="" /></a></p>
-            </div>
-        </div>
-        <div class="w-33">
-            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg"
-                alt="Medipiel centro comercial Hayuelos " />
-            <div class="info-tiendas">
-                <h3>CC HAYUELOS - LOCAL 1-13</h3>
-                <p><strong>Ciudad:</strong> Bogotá</p>
-                <p><strong>Dirección:</strong> Cl. 20 # 82 - 52</p>
-                <p><strong>Correo:</strong> tienda.hayuelos@medipiel.co </p>
-                <p><strong>Horarios:</strong> Lunes a sábado de 10:00 a.m a 7:00 p.m</p>
-                <p class="btn-agendate"><a target="_blank"
-                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20Hayuelos"><img
-                            class="procedimiento-img"
-                            src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
-                            alt="" /></a></p>
+                        <div class="w-33">
+                    <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg" alt="Medipiel centro comercial Buenavista Santa Marta"/>
+                    <div class="info-tiendas">
+                        <h3>CC BUENAVISTA</h3>
+                        <p><strong>Ciudad:</strong> Santa Marta</p>
+                        <p><strong>Dirección:</strong> Av. El Libertador #34-01</p>
+                        <p><strong>Teléfono:</strong> 3128174011  </p>
+                        <p><strong>Horarios:</strong> Lunes a Sábado de 9:00 a.m - 6:00 p.m</p>
+                        <p class="btn-agendate">
+                            <button class="btn-mas" onclick="window.open('https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20Buenavista', '_blank')">
+                                Agéndate
+                            </button>
+                        </p>
+                    </div>
             </div>
         </div>
 
-        <div class="w-33">
-            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg"
-                alt="Medipiel centro comercial Viva Villaviencio " />
-            <div class="info-tiendas">
-                <h3>CC PLAZA VICTORIA - LOCAL 125A</h3>
-                <p><strong>Ciudad:</strong> Pereira</p>
-                <p><strong>Dirección:</strong> Carrera 11 Bis #17 -20</p>
-                <p><strong>Correo:</strong> tienda.plazavictoria@medipiel.co </p>
-                <p><strong>Horarios:</strong> Lunes a sábado de 10:00 a.m - 7:00 p.m</p>
-                <p class="btn-agendate"><a target="_blank"
-                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20Villavicencio"><img
-                            class="procedimiento-img"
-                            src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
-                            alt="" /></a></p>
+        <div class="flex">
+            <div class="w-33">
+                    <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg" alt="Medipiel plaza Catalunya"/>
+                    <div class="info-tiendas">
+                        <h3>PLAZA CATALUNYA - LOCAL 10</h3>
+                        <p><strong>Ciudad:</strong> Barranquilla</p>
+                        <p><strong>Dirección:</strong>  Carrera 58 # 82 79</p>
+                        <p><strong>Teléfono:</strong> 3128174011  </p>
+                        <p><strong>Horarios:</strong> Lunes a Sábado de 8:00 a.m - 8:00 p.m | Domingos y festivos de 9:00 a.m - 6:00 p.m</p>
+                        <p class="btn-agendate">
+                            <button class="btn-mas" onclick="window.open('https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20Catalunya', '_blank')">
+                                Agéndate
+                            </button>
+                        </p>
+                    </div>
+            </div>
+            <div class="w-33">
+                <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg" alt="Medipiel centro comercial Ecoplaza Mosquera"/>
+                <div class="info-tiendas">
+                    <h3>CC ECOPLAZA MOSQUERA - LOCAL 126</h3>
+                    <p><strong>Ciudad:</strong> Mosquera - Cundinamarca</p>
+                    <p><strong>Dirección:</strong> Carrera 3 # 15A-57</p>
+                    <p><strong>Teléfono:</strong> 3128174011 </p>
+                    <p><strong>Horarios:</strong> Lunes a Sábado de 10:00 a.m - 7:00 p.m</p>
+                    <p class="btn-agendate">
+                        <button class="btn-mas" onclick="window.open('https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20Ecoplaza', '_blank')">
+                            Agéndate
+                        </button>
+                    </p>
+                </div>
+            </div>
+                        <div class="w-33">
+                <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg" alt="Medipiel centro comercial Viva Villaviencio "/>
+                <div class="info-tiendas">
+                    <h3>CC VIVA VILLAVICENCIO - LOCAL 110</h3>
+                    <p><strong>Ciudad:</strong> Villavicencio</p>
+                    <p><strong>Dirección:</strong> Calle 7 #45-185</p>
+                    <p><strong>Teléfono:</strong> 3128174011 </p>
+                    <p><strong>Horarios:</strong> Lunes a Sábado de 10:00 a.m - 7:00 p.m</p>
+                    <p class="btn-agendate">
+                        <button class="btn-mas" onclick="window.open('https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20Villavicencio', '_blank')">
+                            Agéndate
+                        </button>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="flex">
-
-
-        <div class="w-33">
-            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg"
-                alt="Medipiel centro comercial Viva Villaviencio " />
-            <div class="info-tiendas">
-                <h3>CC SAN NICOLÁS 2 - LOCAL 3653</h3>
-                <p><strong>Ciudad:</strong> Rionegro, Antioquia</p>
-                <p><strong>Dirección:</strong> Calle 43 #54-139</p>
-                <p><strong>Celular:</strong> 312 - 817.40.11 </p>
-                <p><strong>Horarios:</strong> Lunes a viernes de 10:00 a.m - 7:00 p.m</p>
-                <p class="btn-agendate"><a target="_blank"
-                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20Villavicencio"><img
-                            class="procedimiento-img"
-                            src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
-                            alt="" /></a></p>
+        <div class="flex">
+            <div class="w-33">
+                    <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg" alt="Medipiel centro comercial San Diego "/>
+                <div class="info-tiendas">
+                    <h3>CC SAN DIEGO - LOCAL 1488</h3>
+                    <p><strong>Ciudad:</strong> Medellín</p>
+                    <p><strong>Dirección:</strong> Cl 33 #42B - 06</p>
+                    <p><strong>Correo:</strong> tienda.sandiego@medipiel.co </p>
+                    <p><strong>Horarios:</strong> Lunes a Sábado de 10:00 a.m - 7:00 p.m</p>
+                    <p class="btn-agendate">
+                        <button class="btn-mas" onclick="window.open('https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20San%20Diego', '_blank')">
+                            Agéndate
+                        </button>
+                    </p>
+                </div>
+            </div>
+            <div class="w-33">
+                <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg" alt="Medipiel centro comercial Hayuelos "/>
+                <div class="info-tiendas">
+                    <h3>CC HAYUELOS - LOCAL 1-13</h3>
+                    <p><strong>Ciudad:</strong> Bogotá</p>
+                    <p><strong>Dirección:</strong>  Cl. 20 # 82 - 52</p>
+                    <p><strong>Correo:</strong> tienda.hayuelos@medipiel.co </p>
+                    <p><strong>Horarios:</strong> Lunes a Sábado de 10:00 a.m - 7:00 p.m</p>
+                    <p class="btn-agendate">
+                        <button class="btn-mas" onclick="window.open('https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20Hayuelos', '_blank')">
+                            Agéndate
+                        </button>
+                    </p>
+                </div>
+            </div>
+                        <div class="w-33">
+                <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg" alt="Medipiel centro comercial Viva Villaviencio "/>
+                <div class="info-tiendas">
+                    <h3>CC PLAZA VICTORIA - LOCAL 125A</h3>
+                    <p><strong>Ciudad:</strong> Pereira</p>
+                    <p><strong>Dirección:</strong> Carrera 11 Bis #17 -20</p>
+                    <p><strong>Correo:</strong> tienda.plazavictoria@medipiel.co </p>
+                    <p><strong>Horarios:</strong> Lunes a Sábado de 10:00 a.m - 7:00 p.m</p>
+                    <p class="btn-agendate">
+                        <button class="btn-mas" onclick="window.open('https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20Plaza%20Victoria', '_blank')">
+                            Agéndate
+                        </button>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
 
+        <div class="flex">
+             <div class="w-33">
+                <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg" alt="Medipiel centro comercial Viva Villaviencio "/>
+                <div class="info-tiendas">
+                    <h3>CC SAN NICOLÁS 2 - LOCAL 3653</h3>
+                    <p><strong>Ciudad:</strong> Rionegro, Antioquia</p>
+                    <p><strong>Dirección:</strong> Calle 43 #54-139</p>
+                    <p><strong>Celular:</strong> 312 - 817.40.11 </p>
+                    <p><strong>Horarios:</strong> Lunes a Sábado de 10:00 a.m - 7:00 p.m</p>
+                    <p class="btn-agendate">
+                        <button class="btn-mas" onclick="window.open('https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20San%20Nicolás%202', '_blank')">
+                            Agéndate
+                        </button>
+                    </p>
+                </div>
+            </div>            
+        </div>
 </div>

@@ -1,12 +1,381 @@
-<div class="contenedor-aparatologia">
-    <h2>Procedimiento</h2>
-    <div class="flex">
-        <div class="w-100">
-            <iframe width="100%" height="480" src="https://www.youtube.com/embed/YUOfnfCp934?si=cjFDDd49CVlcXno4"
-                title="Ritual anti imperfecciones - Centros de bienestar Medipiel" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </div>
+<!-- addi prendido 10% -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    .contenedor-cb-interno {
+        padding: 1.5rem;
+        position: relative;
+    }
+
+    .contenedor-cb-interno h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        color: #007078;
+        text-transform: uppercase;
+    }
+
+    .contenedor-cb-interno .precio-servicio {
+        font-size: 1.3rem;
+        color: #007078;
+        margin: 0.5rem 0rem;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .contenedor-cb-interno p {
+        margin: 1rem 0rem;
+        color: #767575;
+    }
+
+    .contenedor-cb-interno .btn-agendar {
+        width: 25%;
+        margin-top: 2rem;
+    }
+
+
+    /* Button used to open the contact form - fixed at the bottom of the page */
+    .open-button {
+        cursor: pointer;
+        border: none;
+    }
+
+    .content-btn-schedule a {
+        color: #000;
+        text-align: center;
+        border: 2px solid #007078;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 10px;
+        transition: all 0.5s;
+        display: block;
+        font-weight: 500;
+    }
+
+    .content-btn-schedule a:hover {
+        color: #fff;
+        background-color: #007078;
+    }
+
+    .addi-overlay {
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        width: 20% !important;
+        height: auto;
+        z-index: 100;
+        border-radius: 4px;
+    }
+
+
+    /*Mobile*/
+
+    @media (max-width:768px) {
+        .contenedor-cb-interno {
+            padding: 0.8rem;
+        }
+
+        .contenedor-cb-interno .btn-agendar {
+            width: 50%;
+            margin: 2rem auto;
+        }
+
+        .contenedor-cb-interno h1 {
+            padding-top: 1.3rem;
+        }
+
+        .addi-overlay {
+            width: 20% !important;
+
+        }
+    }
+
+    @media (max-width:480px) {
+        .addi-overlay {
+            width: 30% !important;
+        }
+    }
+</style>
+
+<!-- addi 10% apagado -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    .contenedor-cb-interno {
+        padding: 1.5rem;
+        position: relative;
+    }
+
+    .contenedor-cb-interno h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        color: #007078;
+        text-transform: uppercase;
+    }
+
+    .contenedor-cb-interno .precio-servicio {
+        font-size: 1.3rem;
+        color: #007078;
+        margin: 0.5rem 0rem;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .contenedor-cb-interno p {
+        margin: 1rem 0rem;
+        color: #767575;
+    }
+
+    .contenedor-cb-interno .btn-agendar {
+        width: 25%;
+        margin-top: 2rem;
+    }
+
+
+    /* Button used to open the contact form - fixed at the bottom of the page */
+    .open-button {
+        cursor: pointer;
+        border: none;
+    }
+
+    .content-btn-schedule a {
+        color: #000;
+        text-align: center;
+        border: 2px solid #007078;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 10px;
+        transition: all 0.5s;
+        display: block;
+        font-weight: 500;
+    }
+
+    .content-btn-schedule a:hover {
+        color: #fff;
+        background-color: #007078;
+    }
+
+    .addi-overlay {
+        display: none;
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        width: 20% !important;
+        height: auto;
+        z-index: 100;
+        border-radius: 4px;
+    }
+
+
+    /*Mobile*/
+
+    @media (max-width:768px) {
+        .contenedor-cb-interno {
+            padding: 0.8rem;
+        }
+
+        .contenedor-cb-interno .btn-agendar {
+            width: 50%;
+            margin: 2rem auto;
+        }
+
+        .contenedor-cb-interno h1 {
+            padding-top: 1.3rem;
+        }
+
+        .addi-overlay {
+            width: 20% !important;
+
+        }
+    }
+
+    @media (max-width:480px) {
+        .addi-overlay {
+            width: 30% !important;
+        }
+    }
+</style>
+
+
+<!-- 3precio full -->
+<div class="contenedor-cb-interno">
+    <h1>Ritual anti-imperfecciones</h1>
+    <div class="precio-servicio"> $200.000</div>
+    <p class="descripcion-servicio">
+        Nuestra experiencia proporciona una detoxificación natural de la piel. Gracias a sus ingredientes activos,
+        regula la producción natural de sebo, ayudando a balancear la hidratación de la piel, evitando el exceso de
+        grasa. Además, su efecto astringente contribuye a reducir los poros dilatados, dejando el rostro con una textura
+        más suave y uniforme. Es Ideal para pieles mixtas a grasas, con tendencia acnéica
+    </p>
+    <p>Duración: 1 hora </p>
+    <div class="btn-agendar">
+        <button class="open-button" onclick="openForm()">
+            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
+                alt="" />
+        </button>
     </div>
+    <img class="addi-overlay"
+        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+        alt="Addi promo" />
 </div>
+
+<!-- 50% -->
+<div class="contenedor-cb-interno">
+    <h1>Ritual anti-imperfecciones</h1>
+    <div class="precio-servicio"><s>$200.000</s> $100.000</div>
+    <p class="descripcion-servicio">
+        Nuestra experiencia proporciona una detoxificación natural de la piel. Gracias a sus ingredientes activos,
+        regula la producción natural de sebo, ayudando a balancear la hidratación de la piel, evitando el exceso de
+        grasa. Además, su efecto astringente contribuye a reducir los poros dilatados, dejando el rostro con una textura
+        más suave y uniforme. Es Ideal para pieles mixtas a grasas, con tendencia acnéica
+    </p>
+    <p>Duración: 1 hora </p>
+    <div class="btn-agendar">
+        <button class="open-button" onclick="openForm()">
+            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
+                alt="" />
+        </button>
+    </div>
+    <img class="addi-overlay"
+        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+        alt="Addi promo" />
+</div>
+
+<!-- 40% -->
+<div class="contenedor-cb-interno">
+    <h1>Ritual anti-imperfecciones</h1>
+    <div class="precio-servicio"><s>$200.000</s> $120.000</div>
+    <p class="descripcion-servicio">
+        Nuestra experiencia proporciona una detoxificación natural de la piel. Gracias a sus ingredientes activos,
+        regula la producción natural de sebo, ayudando a balancear la hidratación de la piel, evitando el exceso de
+        grasa. Además, su efecto astringente contribuye a reducir los poros dilatados, dejando el rostro con una textura
+        más suave y uniforme. Es Ideal para pieles mixtas a grasas, con tendencia acnéica
+    </p>
+    <p>Duración: 1 hora </p>
+    <div class="btn-agendar">
+        <button class="open-button" onclick="openForm()">
+            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
+                alt="" />
+        </button>
+    </div>
+    <img class="addi-overlay"
+        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+        alt="Addi promo" />
+</div>
+
+<!-- 30% -->
+<div class="contenedor-cb-interno">
+    <h1>Ritual anti-imperfecciones</h1>
+    <div class="precio-servicio"><s>$200.000</s> $140.000</div>
+    <p class="descripcion-servicio">
+        Nuestra experiencia proporciona una detoxificación natural de la piel. Gracias a sus ingredientes activos,
+        regula la producción natural de sebo, ayudando a balancear la hidratación de la piel, evitando el exceso de
+        grasa. Además, su efecto astringente contribuye a reducir los poros dilatados, dejando el rostro con una textura
+        más suave y uniforme. Es Ideal para pieles mixtas a grasas, con tendencia acnéica
+    </p>
+    <p>Duración: 1 hora </p>
+    <div class="btn-agendar">
+        <button class="open-button" onclick="openForm()">
+            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
+                alt="" />
+        </button>
+    </div>
+    <img class="addi-overlay"
+        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+        alt="Addi promo" />
+</div>
+
+<!-- 25% -->
+<div class="contenedor-cb-interno">
+    <h1>Ritual anti-imperfecciones</h1>
+    <div class="precio-servicio"><s>$200.000</s> $150.000</div>
+    <p class="descripcion-servicio">
+        Nuestra experiencia proporciona una detoxificación natural de la piel. Gracias a sus ingredientes activos,
+        regula la producción natural de sebo, ayudando a balancear la hidratación de la piel, evitando el exceso de
+        grasa. Además, su efecto astringente contribuye a reducir los poros dilatados, dejando el rostro con una textura
+        más suave y uniforme. Es Ideal para pieles mixtas a grasas, con tendencia acnéica
+    </p>
+    <p>Duración: 1 hora </p>
+    <div class="btn-agendar">
+        <button class="open-button" onclick="openForm()">
+            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
+                alt="" />
+        </button>
+    </div>
+    <img class="addi-overlay"
+        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+        alt="Addi promo" />
+</div>
+
+<!-- 20% -->
+<div class="contenedor-cb-interno">
+    <h1>Ritual anti-imperfecciones</h1>
+    <div class="precio-servicio"><s>$200.000</s> $160.000</div>
+    <p class="descripcion-servicio">
+        Nuestra experiencia proporciona una detoxificación natural de la piel. Gracias a sus ingredientes activos,
+        regula la producción natural de sebo, ayudando a balancear la hidratación de la piel, evitando el exceso de
+        grasa. Además, su efecto astringente contribuye a reducir los poros dilatados, dejando el rostro con una textura
+        más suave y uniforme. Es Ideal para pieles mixtas a grasas, con tendencia acnéica
+    </p>
+    <p>Duración: 1 hora </p>
+    <div class="btn-agendar">
+        <button class="open-button" onclick="openForm()">
+            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
+                alt="" />
+        </button>
+    </div>
+    <img class="addi-overlay"
+        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+        alt="Addi promo" />
+</div>
+
+
+
+<!-- 30% -->
+<div class="contenedor-cb-interno">
+    <h1>Ritual anti-imperfecciones</h1>
+    <div class="precio-servicio"><s>$200.000</s> $140.000</div>
+    <p class="descripcion-servicio">
+        Nuestra experiencia proporciona una detoxificación natural de la piel. Gracias a sus ingredientes activos,
+        regula la producción natural de sebo, ayudando a balancear la hidratación de la piel, evitando el exceso de
+        grasa. Además, su efecto astringente contribuye a reducir los poros dilatados, dejando el rostro con una textura
+        más suave y uniforme. Es Ideal para pieles mixtas a grasas, con tendencia acnéica
+    </p>
+    <p>Duración: 1 hora </p>
+    <div class="btn-agendar">
+        <button class="open-button" onclick="openForm()">
+            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
+                alt="" />
+        </button>
+    </div>
+    <img class="addi-overlay"
+        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+        alt="Addi promo" />
+</div>
+
+
+
+<!-- 40% -->
+<div class="contenedor-cb-interno">
+    <h1>Ritual anti-imperfecciones</h1>
+    <div class="precio-servicio"><s>$200.000</s> $120.000</div>
+    <p class="descripcion-servicio">
+        Nuestra experiencia proporciona una detoxificación natural de la piel. Gracias a sus ingredientes activos,
+        regula la producción natural de sebo, ayudando a balancear la hidratación de la piel, evitando el exceso de
+        grasa. Además, su efecto astringente contribuye a reducir los poros dilatados, dejando el rostro con una textura
+        más suave y uniforme. Es Ideal para pieles mixtas a grasas, con tendencia acnéica
+    </p>
+    <p>Duración: 1 hora </p>
+    <div class="btn-agendar">
+        <button class="open-button" onclick="openForm()">
+            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/14e8f545-1f2f-4474-8bb4-3a28e24c0f48___4643a7e814d76c71e48d4d0a4249391e.webp"
+                alt="" />
+        </button>
+    </div>
+    <img class="addi-overlay"
+        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+        alt="Addi promo" />
+</div>
+
 

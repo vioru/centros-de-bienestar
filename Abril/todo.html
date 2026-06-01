@@ -1,0 +1,1510 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+
+    .img-p {
+        width: 100%;
+        min-height: 280px;
+        border-radius: 0.8rem;
+    }
+
+    .text-focus {
+        color: #007078;
+    }
+
+    .btn-mas {
+        background-color: #2DCCD3;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        padding: 5px 20px;
+        font-size: 20px;
+        font-family: 'Baloo 2', sans-serif;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        max-width: 135px;
+        box-sizing: border-box;
+    }
+
+    .btn-mas:hover {
+        background-color: #26B5BC;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(45, 204, 211, 0.3);
+    }
+
+    .w-50.btn {
+        display: flex;
+        justify-content: end;
+    }
+
+    .contenedor-servicios h2 {
+        font-family: 'Baloo 2', sans-serif;
+        text-align: center;
+        font-weight: 600;
+        margin: 1rem;
+        color: #007078;
+        font-size: 2.1rem;
+    }
+
+    .contenedor-servicios h3 {
+        font-family: 'Baloo 2', sans-serif;
+        text-align: center;
+        font-weight: 600;
+        color: #007078;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1rem 0.8rem 0.5rem;
+    }
+
+    .contenedor-servicios .w-40 {
+        width: 50%;
+        margin: 1rem 0.8rem;
+        transition: all 0.5s;
+        border-radius: 0.8rem;
+    }
+
+    .contenedor-servicios .w-40:hover {
+        transform: translateY(-0.7em);
+        box-shadow: 3px 4px 18px -3px rgba(0, 112, 120, 0.44);
+    }
+
+    .contenedor-servicios .w-40 p {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+        color: #727273;
+    }
+
+    .contenedor-servicios .w-33 {
+        margin: 1rem 0.8rem;
+        transition: all 0.5s;
+        border-radius: 0.8rem;
+    }
+
+    .contenedor-servicios .w-33:hover {
+        transform: translateY(-0.7em);
+        box-shadow: 3px 4px 18px -3px rgba(0, 112, 120, 0.44);
+    }
+
+    .contenedor-servicios .w-33 p {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+        color: #727273;
+    }
+
+    .contenedor-tiendas .w-33 {
+        box-shadow: 0 3px 6px rgba(165, 115, 86, .24);
+        border: 1px solid #eddcd0;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+    }
+
+    .contenedor-tiendas .w-33 p {
+        text-align: left;
+        padding: 0.3rem 0rem;
+        font-size: 0.9rem;
+        color: #727273;
+    }
+
+    .contenedor-tiendas .w-33 img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .contenedor-precio {
+        position: relative;
+        padding: 1rem 2rem;
+    }
+
+    .contenedor-precio .precio-servicio {
+        font-size: 1.2rem;
+        color: #007078;
+        margin: 0.5rem 0rem;
+        font-weight: bold;
+        font-family: 'Baloo 2', sans-serif;
+        text-align: left;
+    }
+
+    .contenedor-precio .btn-mas {
+        position: absolute;
+        width: 38%;
+        right: 0.8rem;
+    }
+
+    .contenedor-tiendas h3 {
+        font-size: 1.1rem;
+        color: #007078;
+        font-family: 'Baloo 2', sans-serif;
+        font-weight: 600 !important;
+        text-align: left;
+        padding: 0rem;
+    }
+
+    .info-tiendas {
+        padding: 0.7rem;
+    }
+
+    .info-tiendas p {
+        color: #727273;
+        font-size: 0.85rem;
+        padding: 0.2rem 0rem;
+    }
+
+    .contenedor-tiendas .w-40 {
+        box-shadow: 0 3px 6px rgba(165, 115, 86, .24);
+        border: 1px solid #eddcd0;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+    }
+
+    .contenedor-tiendas .w-40 p {
+        text-align: left;
+        padding: 0.3rem 0rem;
+        font-size: 0.9rem;
+        color: #727273;
+    }
+
+    .contenedor-tiendas .w-40 img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .contenedor-tiendas .btn-agendate img {
+        width: 40%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .contenedor-tiendas .btn-agendate {
+        margin: 0.5rem 0rem;
+    }
+
+    .banner-responsive {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .banner-responsive img {
+        width: 100%;
+        display: block;
+        border-radius: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .casmara {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 0;
+    }
+
+    .contenedor-servicios .flex:not(.casmara) {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .contenedor-servicios-flex {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .tarjeta-servicio {
+        flex: 0 0 calc(25% - 11.25px);
+        text-align: center;
+        transition: all 0.5s;
+        border-radius: 0.8rem;
+    }
+
+    .tarjeta-servicio:hover {
+        transform: translateY(-0.7em);
+        box-shadow: 3px 4px 18px -3px rgba(0, 112, 120, 0.44);
+    }
+
+    .procedimiento-img,
+    .procedimiento-img-promo {
+        width: 100%;
+        border-radius: 0.6rem;
+    }
+
+    .procedimiento-img-promo {
+        max-height: 350px;
+    }
+
+    .contenedor-servicios-flex .procedimiento-img {
+        height: 215px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .w-33 .procedimiento-img {
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .contenedor-servicios .contenedor-servicios-flex .tarjeta-servicio p {
+        text-align: center;
+        font-family: 'Baloo 2', sans-serif;
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+        color: #727273;
+    }
+
+    /* Addi overlay styles */
+    .image-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .addi-overlay {
+        display: none;
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        width: 35% !important;
+        height: auto;
+        z-index: 10;
+        border-radius: 4px;
+    }
+
+    .newTag-overlay {
+        position: absolute;
+        bottom: 10px;
+        left: 5px;
+        z-index: 10;
+        background-color: #007078;
+        color: white !important;
+        border-radius: 8px;
+        padding: 2px 15px !important;
+        text-align: center;
+        width: 100%;
+        max-width: 110px;
+        box-sizing: border-box;
+        margin: 0;
+        font-size: 1rem !important;
+    }
+
+    .destacado-mes {
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        border-radius: 0.8rem;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 112, 120, 0.15);
+        margin: 2rem 0.8rem;
+    }
+
+    .destacado-img {
+        width: 55%;
+        position: relative;
+    }
+
+    .destacado-img img.procedimiento-img {
+        width: 100%;
+        height: 100%;
+        max-width: 500px;
+        object-fit: cover;
+        border-radius: 0;
+        display: block;
+    }
+
+    .destacado-info {
+        padding: 0 1rem 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .destacado-info a {
+        padding: 0.5rem 0;
+    }
+
+    .destacado-info h3 {
+        font-weight: 600;
+        text-align: left !important;
+        padding: 0 !important;
+        color: #007078;
+    }
+
+    .destacado-info p {
+        color: #505050;
+    }
+
+    .destacado-info .contenedor-precio {
+        padding: 0 !important;
+    }
+
+    .destacado-info .contenedor-precio .precio-servicio {
+        font-size: 1.3rem;
+    }
+
+    .destacado-mes .contenedor-precio .btn-mas {
+        right: 1.5rem !important;
+        padding: 5px 20px !important;
+    }
+
+    .cards-promo {
+        display: flex;
+    }
+
+    .header-destacado {
+        padding: 0.5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background-color: #D5F5F6;
+        margin-bottom: 1rem;
+    }
+
+    .header-destacado h3 {
+        padding: 0 0.5rem;
+        margin: 0;
+        color: #007078;
+        font-family: 'Baloo 2', sans-serif;
+        font-weight: 600;
+        font-size: 1.2rem;
+        text-transform: none;
+    }
+
+    .text-promo {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+        font-size: 0.95rem;
+        color: #373737;
+        line-height: 1.4;
+    }
+
+    .star-icon {
+        width: 20px;
+        height: 20px;
+        color: #007078;
+    }
+
+    .banner-promo-mes-2 {
+        background: linear-gradient(135deg, #3ee3ec 0%, #26B5BC 100%);
+        color: white;
+        padding: 8px 0;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        box-sizing: border-box;
+        border-radius: 8px;
+    }
+
+    .banner-promo-mes-2 h4 {
+        font-family: 'Baloo 2', sans-serif;
+        margin: 1px 0;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.5rem;
+        display: inline-block;
+        animation: scroll-left 55s linear infinite;
+        white-space: nowrap;
+        will-change: transform;
+    }
+
+    .combo-mas {
+        width: 20px;
+        height: 20px;
+    }
+
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .promo-container {
+        border-radius: 15px;
+        margin: 0 auto;
+        display: flex;
+        gap: 5rem;
+        width: 100%;
+        align-items: center;
+        max-width: 1440px;
+        padding: 1rem 0;
+    }
+
+    .promo-header {
+        display: flex;
+        align-items: flex-start;
+        width: 20%;
+        flex-shrink: 0;
+    }
+
+    .promo-title {
+        flex: 1;
+    }
+
+    .promo-title h2 {
+        color: #007078;
+        font-family: 'Baloo 2', sans-serif;
+        font-weight: 700;
+        font-size: 1.8rem;
+        text-align: start;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    .promo-subtitle {
+        color: #007078;
+        font-family: 'Baloo 2', sans-serif;
+        font-weight: 600;
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    .promo-text {
+        color: #373737;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        text-align: left;
+        margin: 0;
+    }
+
+    /* MEDIA QUERIES - ORGANIZADOS DE MAYOR A MENOR */
+
+    /* Tablet - 1024px */
+    @media (max-width: 1024px) {
+        .promo-mes .flex.casmara {
+            flex-direction: column;
+            align-items: center;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .promo-mes .w-40 {
+            width: 98% !important;
+        }
+
+        .contenedor-precio .btn-mas {
+            bottom: 1.5rem;
+        }
+
+        .w-40 span {
+            padding: 0.5rem 0;
+        }
+    }
+
+
+
+    /* Mobile - 768px */
+    @media (max-width: 769px) {
+        .promo-container {
+            gap: 1rem;
+            padding: 0;
+            flex-direction: column;
+        }
+
+        .promo-header {
+            width: 100% !important;
+            text-align: center !important;
+        }
+
+        .header-destacado h3 {
+            font-size: 1.1rem !important;
+        }
+
+        .star-icon {
+            width: 18px;
+            height: 18px;
+        }
+
+        .text-promo {
+            font-size: 0.9rem;
+            padding: 0 0.8rem;
+        }
+
+        .banner-promo-mes-2 {
+            font-size: 0.9rem;
+        }
+
+        .banner-promo-mes-2 h4 {
+            animation: scroll-left 45s linear infinite;
+        }
+
+        .casmara {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 0;
+        }
+
+        .contenedor-servicios-flex .procedimiento-img {
+            height: 280px;
+            object-fit: fill;
+        }
+
+        .contenedor-servicios h3 {
+            font-size: 1.05rem;
+            padding: 1.2rem;
+        }
+
+        .contenedor-tiendas h3 {
+            font-size: 1.05rem;
+            padding: 0.5rem 0rem;
+        }
+
+        .contenedor-servicios .flex {
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contenedor-servicios .flex .w-40 {
+            width: 25%;
+            border: 1px solid #e8d1c8;
+        }
+
+        .contenedor-servicios .flex .w-33 {
+            width: 95%;
+            border: 1px solid #e8d1c8;
+        }
+
+        .tarjeta-servicio {
+            flex: 0 0 100%;
+            margin-bottom: 0;
+            border: 1px solid #e8d1c8;
+        }
+
+        .destacado-mes {
+            flex-direction: column;
+        }
+
+        .destacado-img,
+        .destacado-info {
+            width: 100%;
+        }
+
+        .destacado-img img.procedimiento-img {
+            max-width: 100%;
+        }
+
+        .destacado-info {
+            padding: 1.5rem;
+        }
+
+        .destacado-info h3 {
+            font-size: 1.4rem !important;
+        }
+
+        .promo-title h2 {
+            font-size: 2rem !important;
+            text-align: center !important;
+        }
+
+        .promo-text {
+            font-size: 1.5rem !important;
+            text-align: center !important;
+        }
+    }
+
+    /* Mobile pequeño - 480px */
+    @media (max-width: 480px) {
+
+        .contenedor-servicios h1,
+        .contenedor-servicios h2 {
+            font-size: 1.1rem !important;
+            margin: 1rem;
+        }
+
+        .promo-title h2 {
+            font-size: 2rem !important;
+            text-align: center !important;
+        }
+    }
+</style>
+
+<!-- promos -->
+<div class="contenedor-servicios">
+    <div class="banner-promo-mes-2">
+        <h4>
+            ✦ MARZO DE RENOVACIÓN ✦ DETOX ✦ PRECIOS EXCLUSIVOS EN LA WEB ✦ El GLOW QUE TU PIEL NECESITA ✦ BIENESTAR MDP BY MEDIPIEL
+            ✦ MARZO DE RENOVACIÓN ✦ DETOX ✦ PRECIOS EXCLUSIVOS EN LA WEB ✦ El GLOW QUE TU PIEL NECESITA ✦ BIENESTAR MDP BY MEDIPIEL
+            ✦ MARZO DE RENOVACIÓN ✦ DETOX ✦ PRECIOS EXCLUSIVOS EN LA WEB ✦ El GLOW QUE TU PIEL NECESITA ✦ BIENESTAR MDP BY MEDIPIEL
+            ✦ MARZO DE RENOVACIÓN ✦ DETOX ✦ PRECIOS EXCLUSIVOS EN LA WEB ✦ El GLOW QUE TU PIEL NECESITA ✦ BIENESTAR MDP BY MEDIPIEL
+        </h4>
+    </div>
+
+    <div class="promo-container">
+        <div class="promo-header">
+            <div class="promo-title">
+                <h2>Promociones Del Mes</h2>
+                <p class="promo-subtitle">Bienestar que enamora</p>
+            </div>
+        </div>
+        <p class="promo-text">
+            Este mes, consiéntete con un masaje de drenaje linfático corporal con un precio especial. Además, dale a tu piel el brillo que merece con un 30% OFF en nuestro Ritual Multivitamínico. ¡Regálate el momento de bienestar que estabas esperando! 
+        </p>
+    </div>
+
+    <div class="promo-mes">
+        <!-- Cards de limpieza facial y masaje antiestres -->
+        <div class="contenedor-servicios">
+            <div class="flex casmara">
+                <!-- Card de limpieza facial premium -->
+                <div class="w-40">
+                    <a href="/centros-bienestar/masaje-de-drenaje-linfatico-corporal">
+                        <div class="image-container">
+                            <img class="procedimiento-img-promo"
+                                src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/20779bb4-abbf-41c3-a5d8-d1d379b45643___cbca8683eefcacaebc4dd52a98159cf9.webp"
+                                alt="Masaje de drenaje linfático corporal" />
+                            <img class="addi-overlay"
+                                src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+                                alt="Addi promo" />
+                        </div>
+                        <h3>Masaje de drenaje linfático corporal - % Descuento especial</h3>
+                        <p>Es una técnica terapéutica manual que estimula el sistema linfático para favorecer la
+                                eliminación de toxinas, líquidos retenidos y residuos metabólicos del cuerpo.</p>
+                        <div class="contenedor-precio">
+                            <div class="flex">
+                                <div >
+                                        <div class="precio-servicio">X5 sesiones <s>$650.000</s> $520.000  <br> X10 sesiones <s>$1.300.000</s> $910.000 - 30% off</div>
+                                </div>
+                                <div class="w-50 btn">
+                                    <a class="btn-mas" href="/centros-bienestar/masaje-de-drenaje-linfatico-corporal">Lo quiero</a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card de masaje antiestres-->
+                <div class="w-40">
+                    <a href="/centros-bienestar/ritual-multivitaminico">
+                        <div class="image-container">
+                            <img class="procedimiento-img-promo"
+                                src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/3b6fe3a5-1e8c-4aba-8c73-14ed52a7019c___6deab0a82654e15623a3bc2c126bf254.webp"
+                                alt="Ritual multivitamínico" />
+                            <img class="addi-overlay"
+                                src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+                                alt="Addi promo" />
+                        </div>
+                        <h3>Ritual multivitamínico - 30% off</h3>
+                        <p>Vive esta experiencia rejuvenecedora que estimula la producción de colágeno, elastina y te ayudará a lucir una piel más firme e hidratada por más tiempo.</p>
+                        <div class="contenedor-precio">
+                            <div class="flex">
+                                <div class="w-50">
+                                    <div class="precio-servicio"><s>$200.000</s><br> $140.000</div>
+                                </div>
+                                <div class="w-50 btn">
+                                    <a class="btn-mas" href="/centros-bienestar/ritual-multivitaminico">Lo quiero</a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- card especial drenaje  -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+
+    .ritual-container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .ritual-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ritual-card {
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        border-radius: 0.8rem;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 112, 120, 0.15);
+        margin: 2rem 0.8rem;
+        width: 100%;
+        transition: all 0.5s;
+        max-height: 300px;
+
+    }
+
+    .ritual-card:hover {
+        transform: translateY(-0.7em);
+        box-shadow: 3px 4px 18px -3px rgba(0, 112, 120, 0.44);
+    }
+
+    .ritual-image-section {
+        width: 45%;
+        position: relative;
+    }
+
+    .ritual-img-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .ritual-main-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 18px;
+        display: block;
+        /* min-height: 250px; */
+    }
+
+    .ritual-promo-badge {
+        display: none;
+        /* position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 80px !important;
+        height: auto;
+        z-index: 10;
+        border-radius: 4px; */
+    }
+
+    .ritual-content-section {
+        width: 55%;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ritual-link {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .ritual-title {
+        font-family: 'Baloo 2', sans-serif;
+        font-weight: 600;
+        color: #007078;
+        font-size: 1.4rem;
+        text-align: left;
+        margin-bottom: 1rem;
+        text-transform: none;
+        padding: 0;
+    }
+
+    .ritual-description {
+        color: #505050;
+        text-align: left;
+        margin-bottom: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+    .ritual-price-container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .ritual-price-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .ritual-price-section {
+        flex: 1;
+    }
+
+    .ritual-price {
+        font-size: 1.3rem;
+        color: #007078;
+        margin: 0;
+        font-weight: bold;
+        font-family: 'Baloo 2', sans-serif;
+        text-align: left;
+    }
+
+    .ritual-price s {
+        color: #999;
+        font-weight: normal;
+        margin-right: 0.5rem;
+    }
+
+    .ritual-button-section {
+        flex-shrink: 0;
+    }
+
+    .ritual-buy-btn {
+        background-color: #2DCCD3;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        padding: 8px 24px;
+        font-size: 1rem;
+        font-family: 'Baloo 2', sans-serif;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        min-width: 120px;
+        box-sizing: border-box;
+    }
+
+    .ritual-buy-btn:hover {
+        background-color: #26B5BC;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(45, 204, 211, 0.3);
+    }
+
+    @media screen and (min-width: 769px) {
+        .ritual-promo-badge {
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .ritual-wrapper {
+            padding: 1rem 0;
+        }
+
+        .ritual-card {
+            flex-direction: column;
+            margin: 1rem 0.5rem;
+            max-height: none;
+        }
+
+        .ritual-image-section,
+        .ritual-content-section {
+            width: 100%;
+        }
+
+        .ritual-main-img {
+            min-height: 200px;
+        }
+
+        .ritual-content-section {
+            padding: 1.5rem;
+        }
+
+        .ritual-title {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .ritual-description {
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .ritual-price-row {
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .ritual-price {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .ritual-buy-btn {
+            width: 100%;
+            max-width: 200px;
+        }
+    }
+</style>
+
+<div class="ritual-container">
+    <div class="ritual-wrapper">
+        <div class="ritual-card">
+            <div class="ritual-image-section">
+                <div class="ritual-img-container">
+                    <img class="ritual-main-img"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/3a04c881-4855-455d-9015-f27d87318416___e37faff2532a7ac8479f8e58f2e215ea.webp"
+                        alt="Masaje de drenaje linfático corporal" />
+                    <img class="ritual-promo-badge"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+                        alt="Addi promo" />
+                </div>
+            </div>
+            <div class="ritual-content-section">
+                <a href="/centros-bienestar/masaje-de-drenaje-linfatico-corporal" class="ritual-link">
+                    <h3 class="ritual-title">Masaje de drenaje linfático corporal - descuento especial</h3>
+                    <p class="ritual-description">
+                        Estimula tu sistema linfático y mejora la circulación con nuestro masaje de drenaje especializado.
+                        Ideal para reducir retención de líquidos y mejorar la apariencia de la piel.
+                    </p>
+                    <div class="ritual-price-container">
+                        <div class="ritual-price-row">
+                            <div class="ritual-price-section">
+                                <div class="ritual-price">X5 sesiones - 20% <s>$650.000</s> $520.000</div>
+                                <div class="ritual-price">X10 sesiones - 30% <s>$1.300.000</s> $910.000</div>
+                            </div>
+                            <div class="ritual-button-section">
+                                <span class="ritual-buy-btn"
+                                    onclick="window.location.href='/centros-bienestar/masaje-de-drenaje-linfatico-corporal'">
+                                    Lo quiero
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- titulo faciales -->
+<div class="contenedor-servicios">
+    <h1 style="opacity: 0; margin: 0; position: absolute; font-size:1px">Centros de bienestar Spa Centro de Spa Medipiel
+    </h1>
+    <h2>Procedimientos Faciales</h2>
+</div>
+
+
+<!-- mini banner -->
+
+<div class="dn contenedor-servicios">
+    <div class="banner-responsive">
+        <picture>
+            <source media="(max-width: 769px)"
+                srcset="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/93a7a90b-8e3c-4e3e-94c2-11b8edebc790___f71e76cde8079f3a5a31e61b1dd0899a.jpg">
+            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/a4f90fb6-c3ce-4a32-90cf-9b08b73297d7___edba45effb063bf8c6960cd3f04eec03.jpg"
+                alt="Banner procedimientos corporales">
+        </picture>
+    </div>
+</div>
+
+
+<div class="contenedor-servicios">
+
+    <div class="flex contenedor-servicios-flex">
+        <div class="tarjeta-servicio">
+            <a href="/centros-bienestar/ritual-efecto-rejuvenecedor">
+                <div class="image-container">
+                    <img class="procedimiento-img"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/e09f63ea-1f3b-4078-b2eb-bb76fe2074ef___1e7d84fdd98ee1b86985398f785f880d.webp"
+                        alt="Ritual efecto rejuvenecedor" />
+                    <img class="addi-overlay"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+                        alt="Addi promo" />
+                    <p class="newTag-overlay"> Nuevo</p>
+                </div>
+                <h3>Ritual efecto rejuvenecedor - 30% off</h3>
+                <p>Experimenta una renovación completa de tu piel con nuestro ritual rejuvenecedor que combina técnicas
+                    avanzadas para estimular la regeneración celular y reducir los signos del envejecimiento.</p>
+                <div class="contenedor-precio">
+                    <div class="flex">
+                        <div class="w-50">
+                            <div class="precio-servicio"><s>$200.000</s> $140.000</div>
+                        </div>
+                        <div class="w-50 btn">
+                            <a class="btn-mas" href="/centros-bienestar/ritual-efecto-rejuvenecedor">Lo quiero</a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tarjeta-servicio">
+            <a href="/centros-bienestar/ritual-anti-imperfecciones">
+                <div class="image-container">
+                    <img class="procedimiento-img"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/4d26fbbc-17a5-48e1-8cf1-5879849e3b05___79f94da8fb6977b9f1df95f4f2b83bf6.webp"
+                        alt="Ritual anti-imperfecciones" />
+                    <img class="addi-overlay"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+                        alt="Addi promo" />
+                    <p class="newTag-overlay"> Nuevo</p>
+                </div>
+                <h3>Ritual anti-imperfecciones - 30% off</h3>
+                <p>Tratamiento especializado para combatir imperfecciones y mejorar la textura de tu piel, ayudando a
+                    reducir la apariencia de poros dilatados y manchas para un cutis más uniforme.</p>
+                <div class="contenedor-precio">
+                    <div class="flex">
+                        <div class="w-50">
+                            <div class="precio-servicio"><s>$200.000</s> $140.000</div>
+                        </div>
+                        <div class="w-50 btn">
+                            <a class="btn-mas" href="/centros-bienestar/ritual-anti-imperfecciones">Lo quiero</a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tarjeta-servicio">
+            <a href="/centros-bienestar/ritual-cuidado-sensible">
+                <div class="image-container">
+                    <img class="procedimiento-img"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/e17f37d8-7a36-41e0-9ae7-93ac15e73949___6af959874bb609e2754422b9c6138bb0.webp"
+                        alt="Ritual cuidado sensible" />
+                    <img class="addi-overlay"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+                        alt="Addi promo" />
+                    <p class="newTag-overlay"> Nuevo</p>
+                </div>
+                <h3>Ritual cuidado sensible - 30% off</h3>
+                <p>Diseñado especialmente para pieles sensibles y delicadas, este ritual ofrece cuidados suaves y
+                    calmantes que nutren y protegen tu piel sin causar irritación.</p>
+                <div class="contenedor-precio">
+                    <div class="flex">
+                        <div class="w-50">
+                            <div class="precio-servicio"><s>$200.000</s> $140.000</div>
+                        </div>
+                        <div class="w-50 btn">
+                            <a class="btn-mas" href="/centros-bienestar/ritual-cuidado-sensible">Lo quiero</a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tarjeta-servicio">
+            <a href="/centros-bienestar/limpieza-facial-premium">
+                <div class="image-container">
+                    <img class="procedimiento-img"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/8fd42b3d-e507-4c3d-9b23-4b5b210d8893___937cecbbb6b314bf1467b3375f055fa6.webp"
+                        alt="Limepieza facial premium" />
+                    <img class="addi-overlay"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+                        alt="Addi promo" />
+                </div>
+                <h3>Limpieza facial premium - 30% off</h3>
+                <p>Una experiencia maravillosa de limpieza facial, remoción de comedones, células muertas y puntos
+                    negros. ¡Luce una piel radiante y sana!</p>
+                <div class="contenedor-precio">
+                    <div class="flex">
+                        <div class="w-50">
+                            <div class="precio-servicio"><s>$200.000</s> $140.000</div>
+                        </div>
+                        <div class="w-50 btn">
+                            <button class="btn-mas"
+                                onclick="window.location.href='/centros-bienestar/limpieza-facial-premium'">
+                                Lo quiero
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tarjeta-servicio">
+            <a href="/centros-bienestar/booster-hidratacion-intensiva">
+                <div class="image-container">
+                    <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/63c9cb44-3a8f-4622-ac43-e897dbf03bf1___dfa3bb63a8c1973b5f36bdf2442980df.webp"
+                        alt="Booster de hidratación intensiva" />
+                    <img class="addi-overlay"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+                        alt="Addi promo" />
+                </div>
+                <h3>Booster de hidratación intensiva - 30% off</h3>
+                <p>¡El ácido hialurónico será el protagonista de este ritual! Actúa como una cascada de hidratación que
+                    brinda vitalidad, suavidad y mejora la textura de tu piel. </p>
+                <div class="contenedor-precio">
+                    <div class="flex">
+                        <div class="w-50">
+                            <div class="precio-servicio"><s>$200.000</s> $140.000</div>
+                        </div>
+                        <div class="w-50 btn">
+                            <a class="btn-mas" href="/centros-bienestar/booster-hidratacion-intensiva">Lo quiero</a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="tarjeta-servicio">
+            <a href="/centros-bienestar/ritual-luminosidad">
+                <div class="image-container">
+                    <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/26a8bbfb-674a-4835-a447-55508c164c12___f9deaf987fd912a602b691a4b5ea9d1d.webp"
+                        alt="Ritual de luminosidad" />
+                    <img class="addi-overlay"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+                        alt="Addi promo" />
+                </div>
+                <h3>Ritual de luminosidad - 30% off</h3>
+                <p>Este ritual te ayudará a lucir una piel más joven y radiante brindándote ese brillo natural que tú
+                    rostro necesita. ¡Una piel perfectamente iluminada!</p>
+                <div class="contenedor-precio">
+                    <div class="flex">
+                        <div class="w-50">
+                            <div class="precio-servicio"><s>$200.000</s> $140.000</div>
+                        </div>
+                        <div class="w-50 btn">
+                            <a class="btn-mas" href="/centros-bienestar/ritual-luminosidad">Lo quiero</a>
+                        </div>
+                    </div>
+                </div>
+
+            </a>
+        </div>
+        <!-- <div class="tarjeta-servicio">
+            <a href="/centros-bienestar/ritual-multivitaminico">
+                <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/3b6fe3a5-1e8c-4aba-8c73-14ed52a7019c___6deab0a82654e15623a3bc2c126bf254.webp"
+                    alt="Ritual Multivitaminico" />
+                <h3>Ritual multivitamínico - 30% off</h3>
+                <p>Vive esta experiencia rejuvenecedora que estimula la producción de colágeno, elastina y te ayudará a
+                    lucir una piel más firme e hidratada por más tiempo.</p>
+                <div class="contenedor-precio">
+                    <div class="flex">
+                        <div class="w-50">
+                            <div class="precio-servicio"><s>$200.000</s> $140.000</div>
+                        </div>
+                        <div class="w-50 btn">
+                            <button class="btn-mas"
+                                onclick="window.location.href='/centros-bienestar/ritual-multivitaminico'">
+                                Lo quiero
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div> -->
+    </div>
+</div>
+
+
+<!-- corporales -->
+<div class="contenedor-servicios">
+    <h2>Procedimientos Corporales</h2>
+</div>
+
+
+<div class="contenedor-servicios">
+
+    <div class="flex">
+        <!-- <div class="w-33">
+            <a href="/centros-bienestar/masaje-de-drenaje-linfatico-corporal">
+                <div class="image-container">
+                    <img class="img-p"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/3a04c881-4855-455d-9015-f27d87318416___e37faff2532a7ac8479f8e58f2e215ea.webp"
+                        alt="">
+                    <img class="addi-overlay"
+                        src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/0707d7f0-fa30-440f-a641-7767f4c3c880___8e17e58d6a6002c5834b658cc03131e2.jpg"
+                        alt="Addi">
+                    <p class="newTag-overlay"> Nuevo</p>
+                </div>
+                <h3>Masaje de drenaje linfático corporal - descuento especial </h3>
+                <p>Estimula tu sistema linfático y mejora la circulación con nuestro masaje de drenaje especializado.
+                    Ideal
+                    para reducir retención de líquidos y mejorar la apariencia de la piel.</p>
+                <div class=" contenedor-precio flex">
+                    <div class="w-50">
+
+                        <div class="precio-servicio">X5 sesiones - 20%<s>$650.000</s> $520.000</div>
+                        <div class="precio-servicio">X10 sesiones 30%<s>$1.300.000</s> $910.000</div>
+                    </div>
+                    <div class="w-50 btn">
+                        <button class="btn-mas"
+                            onclick="window.location.href='/centros-bienestar/masaje-de-drenaje-linfatico-corporal'">Lo
+                            quiero</button>
+                    </div>
+                </div>
+
+
+            </a>
+        </div> -->
+        <div class="w-33">
+            <a href="/centros-bienestar/limpieza-espalda-premium">
+                <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/245d2d53-6dc9-4bd8-b1d3-289102416eef___acef2f388ff43d11e00fc54085f987e6.webp"
+                    alt="Limpieza de espalda premium" />
+                <h3>Limpieza de espalda premium - 30% off</h3>
+                <p>Esta limpieza es perfecta para eliminar impurezas, células muertas e imperfecciones que obstruyen los
+                    poros, previniendo futuras apariciones y mejorando la apariencia de la piel.</p>
+
+                <div class="contenedor-precio">
+                    <div class="flex">
+                        <div class="w-50">
+                            <div class="precio-servicio"><s>$270.000</s> $189.000</div>
+                        </div>
+                        <div class="w-50 btn">
+                            <button class="btn-mas"
+                                onclick="window.location.href='/centros-bienestar/limpieza-espalda-premium'">
+                                Lo quiero
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="w-33">
+            <a href="/centros-bienestar/masaje-antiestres">
+                <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/159c7043-44af-4c41-9bec-d746fee3d3f8___9302f0de03da09c42c1337422431aa4d.webp"
+                    alt="Masajes antiestrés " />
+                <h3>Masaje antiestrés - 30% off</h3>
+                <p>Increíble experiencia de relajación que te permite desconectar tu mente y relajar tu cuerpo, mientras
+                    tu piel recibe una dósis extra de hidratación.</p>
+                <div class="contenedor-precio">
+                    <div class="flex">
+                        <div class="w-50">
+                            <div class="precio-servicio"><s>$250.000</s> $175.000</div>
+                        </div>
+                        <div class="w-50 btn">
+                            <button class="btn-mas"
+                                onclick="window.location.href='/centros-bienestar/masaje-antiestres'">
+                                Lo quiero
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- tiendas -->
+
+<div class="contenedor-servicios contenedor-tiendas">
+    <h2>Visítanos en: </h2>
+
+    <div class="flex">
+        <div class="w-33">
+            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg" alt="Medipiel el Tesoro" />
+            <div class="info-tiendas">
+                <h3>CC EL TESORO 1 - LOCAL 1240</h3>
+                <p><strong>Ciudad:</strong> Medellín</p>
+                <p><strong>Dirección:</strong> Carrera 25A # 1A Sur-45</p>
+                <p><strong>Correo:</strong> </p>
+                <p><strong>Horarios:</strong> Lunes a Sábado de 8:00 a.m - 8:00 p.m | Domingos y festivos de 11:00 a.m -
+                    8:00 p.m</p>
+                <p class="btn-agendate">
+                    <a class="btn-mas" target="_blank"
+                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20Medipiel,%20deseo%20agendar%20un%20procediemiento%20en%20Tesoro1">Agéndate</a>
+                </p>
+            </div>
+        </div>
+        <div class="w-33">
+            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg" alt="Medipiel Piazza Bella" />
+            <div class="info-tiendas">
+                <h3>PIAZZA BELLA - LOCAL 9808</h3>
+                <p><strong>Ciudad:</strong> Medellín</p>
+                <p><strong>Dirección:</strong> Carrera 29D #6A - 05 </p>
+                <p><strong>Correo:</strong> piazabella@medipiel.com.co</p>
+                <p><strong>Horarios:</strong> Lunes a Sábado de 9:00 a.m - 6:00 p.m</p>
+                <p class="btn-agendate">
+                    <a class="btn-mas" target="_blank"
+                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20Medipiel,%20deseo%20agendar%20un%20procediemiento%20en%20Piazza%20Bella">Agéndate</a>
+                </p>
+            </div>
+        </div>
+        <div class="w-33">
+            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-9.jpg" alt="Medipiel Viva Laureles" />
+            <div class="info-tiendas">
+                <h3>VIVA LAURELES - LOCAL 103</h3>
+                <p><strong>Ciudad:</strong> Medellín</p>
+                <p><strong>Dirección:</strong> Carrera 81 #37 - 100 </p>
+                <p><strong>Correo:</strong> vivalaureles@medipiel.com.co</p>
+                <p><strong>Horarios:</strong> Lunes a Sábado de 8:00 a.m - 8:00 p.m | Domingos y festivos de 11:00 a.m -
+                    7:00 p.m</p>
+                <p class="btn-agendate">
+                    <a class="btn-mas" target="_blank"
+                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20Medipiel,%20deseo%20agendar%20un%20procediemiento%20en%20Viva%20Laureles">Agéndate</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="w-33">
+            <img src="https://medipielsa.vteximg.com.br/arquivos/store.jpg" alt="Medipiel Mall PLaza" />
+            <div class="info-tiendas">
+                <h3>CC MALL PLAZA - LOCAL 109</h3>
+                <p><strong>Ciudad:</strong> Cali</p>
+                <p><strong>Dirección:</strong> Calle 5 # 52 - 210 </p>
+                <p><strong>Correo:</strong> </p>
+                <p><strong>Horarios:</strong> Lunes a Sábado de 10:00 a.m - 7:00 p.m</p>
+                <p class="btn-agendate">
+                    <a class="btn-mas" target="_blank"
+                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20Medipiel,%20deseo%20agendar%20un%20procediemiento%20en%20mall%20plaza%20cali">Agéndate</a>
+                </p>
+            </div>
+        </div>
+        <div class="w-33">
+            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-33.jpg" alt="Medipiel parque la 93" />
+            <div class="info-tiendas">
+                <h3>PARQUE LA 93 - LOCAL 1</h3>
+                <p><strong>Ciudad:</strong> Bogotá</p>
+                <p><strong>Dirección:</strong> Calle 93A # 13-27 </p>
+                <p><strong>Correo:</strong> </p>
+                <p><strong>Horarios:</strong> Lunes a Sábado de 8:00 a.m - 8:00 p.m | Domingos y festivos de 10:00 a.m -
+                    7:00 p.m</p>
+                <p class="btn-agendate">
+                    <a class="btn-mas" target="_blank"
+                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20Medipiel,%20deseo%20agendar%20un%20procediemiento%20en%20parque%20la%2093">Agéndate</a>
+                </p>
+            </div>
+        </div>
+        <div class="w-33">
+            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg"
+                alt="Medipiel centro comercial Buenavista Santa Marta" />
+            <div class="info-tiendas">
+                <h3>CC BUENAVISTA</h3>
+                <p><strong>Ciudad:</strong> Santa Marta</p>
+                <p><strong>Dirección:</strong> Av. El Libertador #34-01</p>
+                <p><strong>Teléfono:</strong> 3128174011 </p>
+                <p><strong>Horarios:</strong> Lunes a Sábado de 9:00 a.m - 6:00 p.m</p>
+                <p class="btn-agendate">
+                    <a class="btn-mas" target="_blank"
+                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20Buenavista">Agéndate</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="w-33">
+            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg" alt="Medipiel plaza Catalunya" />
+            <div class="info-tiendas">
+                <h3>PLAZA CATALUNYA - LOCAL 10</h3>
+                <p><strong>Ciudad:</strong> Barranquilla</p>
+                <p><strong>Dirección:</strong> Carrera 58 # 82 79</p>
+                <p><strong>Teléfono:</strong> 3128174011 </p>
+                <p><strong>Horarios:</strong> Lunes a Sábado de 8:00 a.m - 8:00 p.m | Domingos y festivos de 9:00 a.m -
+                    6:00 p.m</p>
+                <p class="btn-agendate">
+                    <a class="btn-mas" target="_blank"
+                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20Catalunya">Agéndate</a>
+                </p>
+            </div>
+        </div>
+        <div class="w-33">
+            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg"
+                alt="Medipiel centro comercial Ecoplaza Mosquera" />
+            <div class="info-tiendas">
+                <h3>CC ECOPLAZA MOSQUERA - LOCAL 126</h3>
+                <p><strong>Ciudad:</strong> Mosquera - Cundinamarca</p>
+                <p><strong>Dirección:</strong> Carrera 3 # 15A-57</p>
+                <p><strong>Teléfono:</strong> 3128174011 </p>
+                <p><strong>Horarios:</strong> Lunes a Sábado de 10:00 a.m - 7:00 p.m</p>
+                <p class="btn-agendate">
+                    <a class="btn-mas" target="_blank"
+                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20Ecoplaza">Agéndate</a>
+                </p>
+            </div>
+        </div>
+        <div class="w-33">
+            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg"
+                alt="Medipiel centro comercial Viva Villaviencio " />
+            <div class="info-tiendas">
+                <h3>CC VIVA VILLAVICENCIO - LOCAL 110</h3>
+                <p><strong>Ciudad:</strong> Villavicencio</p>
+                <p><strong>Dirección:</strong> Calle 7 #45-185</p>
+                <p><strong>Teléfono:</strong> 3128174011 </p>
+                <p><strong>Horarios:</strong> Lunes a Sábado de 10:00 a.m - 7:00 p.m</p>
+                <p class="btn-agendate">
+                    <a class="btn-mas" target="_blank"
+                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20Villavicencio">Agéndate</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="w-33">
+            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg"
+                alt="Medipiel centro comercial San Diego " />
+            <div class="info-tiendas">
+                <h3>CC SAN DIEGO - LOCAL 1488</h3>
+                <p><strong>Ciudad:</strong> Medellín</p>
+                <p><strong>Dirección:</strong> Cl 33 #42B - 06</p>
+                <p><strong>Correo:</strong> tienda.sandiego@medipiel.co </p>
+                <p><strong>Horarios:</strong> Lunes a Sábado de 10:00 a.m - 7:00 p.m</p>
+                <p class="btn-agendate">
+                    <a class="btn-mas" target="_blank"
+                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20San%20Diego">Agéndate</a>
+                </p>
+            </div>
+        </div>
+        <div class="w-33">
+            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg"
+                alt="Medipiel centro comercial Hayuelos " />
+            <div class="info-tiendas">
+                <h3>CC HAYUELOS - LOCAL 1-13</h3>
+                <p><strong>Ciudad:</strong> Bogotá</p>
+                <p><strong>Dirección:</strong> Cl. 20 # 82 - 52</p>
+                <p><strong>Correo:</strong> tienda.hayuelos@medipiel.co </p>
+                <p><strong>Horarios:</strong> Lunes a Sábado de 10:00 a.m - 7:00 p.m</p>
+                <p class="btn-agendate">
+                    <a class="btn-mas" target="_blank"
+                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20Hayuelos">Agéndate</a>
+                </p>
+            </div>
+        </div>
+        <div class="w-33">
+            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg"
+                alt="Medipiel centro comercial Viva Villaviencio " />
+            <div class="info-tiendas">
+                <h3>CC PLAZA VICTORIA - LOCAL 125A</h3>
+                <p><strong>Ciudad:</strong> Pereira</p>
+                <p><strong>Dirección:</strong> Carrera 11 Bis #17 -20</p>
+                <p><strong>Correo:</strong> tienda.plazavictoria@medipiel.co </p>
+                <p><strong>Horarios:</strong> Lunes a Sábado de 10:00 a.m - 7:00 p.m</p>
+                <p class="btn-agendate">
+                    <a class="btn-mas" target="_blank"
+                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20Plaza%20Victoria">Agéndate</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="w-33">
+            <img src="https://medipielsa.vtexassets.com/arquivos/store-image-7.jpg"
+                alt="Medipiel centro comercial Viva Villaviencio " />
+            <div class="info-tiendas">
+                <h3>CC SAN NICOLÁS 2 - LOCAL 3653</h3>
+                <p><strong>Ciudad:</strong> Rionegro, Antioquia</p>
+                <p><strong>Dirección:</strong> Calle 43 #54-139</p>
+                <p><strong>Celular:</strong> 312 - 817.40.11 </p>
+                <p><strong>Horarios:</strong> Lunes a Viernes de 11:00 a.m - 8:00 p.m</p>
+                <p class="btn-agendate">
+                    <a class="btn-mas" target="_blank"
+                        href="https://api.whatsapp.com/send?phone=573128174011&text=Hola%20deseo%20agendar%20un%20procediemiento%20en%20San%20Nicolás%202">Agéndate</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- video  -->
+
+<script>
+    window.VIDEOASK_EMBED_CONFIG = {
+        "kind": "widget",
+        "url": "https://www.videoask.com/fh9did830",
+        "options": {
+            "widgetType": "VideoThumbnailWindowTall",
+            "text": "",
+            "backgroundColor": "#007078",
+            "position": "bottom-left",
+            "dismissible": true,
+            "videoPosition": "center center"
+        }
+    }
+</script>
+<script src="https://www.videoask.com/embed/embed.js"></script>
+
+
